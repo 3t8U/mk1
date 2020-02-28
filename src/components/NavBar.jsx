@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 
 function NavBar(props) {
   var navBarAddStyles = {
-    backgroundColor: 'black',
+    backgroundColor: '',
     fontWeight: 'bold',
     fontFamily: 'Ultra',
-    width: '80%',
-    margin: '0 auto'
-
+    maxWidth: '100',
+    margin: '10% auto',
+    position: 'relative',
+    opacity: '.5'
 
    };
   return (
