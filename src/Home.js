@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.png';
 import './Home.css';
+import './bootstrap/dist/css/bootstrap.css';
+import { Switch, Route } from 'react-router-dom';
 
 function Home() {
   return (
