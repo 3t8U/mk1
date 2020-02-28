@@ -6,17 +6,15 @@ import NavBar from './components/NavBar.jsx';
 import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import PortalSmashers from './components/PortalSmashers.jsx';
+import Intro from './components/Intro.jsx';
+
 function Home() {
   return (
     <div className="Home">
-      <header className="App-header">
-        <NavBar/>
-      <div className = "logoStyle">
-        <Logo/>
-      </div>
-      </header>
+
       <Switch>
       <Route path='/PortalSmashers' component={PortalSmashers} />
+      <Route exact path='/' component={Intro} />
       </Switch>
     </div>
 
