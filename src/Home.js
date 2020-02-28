@@ -12,5 +12,12 @@ function Home() {
       <header className="App-header">
         <NavBar/>
       <div className = "logoStyle">
-      
+      <Link to="/Menu"><img src={logo} className="App-logo" alt="logo" /></Link>
+      </div>
+      </header>
+    </div>
+
+  );
+}
+
 export default Home;
