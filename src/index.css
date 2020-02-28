@@ -16,3 +16,8 @@ code {
   font-family: 'Barriecito';
   src: local('Barriecito'), url(./fonts//Barriecito-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Green Fuz V1';
+  src: local('Green Fuz V1'), url(./fonts/Green Fuz V1.ttf) format('truetype');
+}

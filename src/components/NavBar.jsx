@@ -3,21 +3,26 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import GoogleFontLoader from 'react-google-font-loader';
 import { Link } from 'react-router-dom';
 
+
 function NavBar(props) {
   var navBarAddStyles = {
     Color: 'yellow',
     fontWeight: 'bold',
     fontFamily: 'Barriecito',
+
     maxWidth: '100',
     margin: '10% auto',
     position: 'relative',
     opacity: '.5',
+    padding: '10px',
+    fontSize: '50px'
 
 
    };
    var titleStyle = {
      textAlign: 'center',
      color: 'yellow',
+     fontSize: '75px'
    };
 
 
