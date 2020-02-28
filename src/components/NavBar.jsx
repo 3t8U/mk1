@@ -5,59 +5,53 @@ import { Link } from 'react-router-dom';
 
 function NavBar(props) {
   var navBarAddStyles = {
-    backgroundColor: '',
+    Color: 'yellow',
     fontWeight: 'bold',
-    fontFamily: 'Ultra',
+    fontFamily: 'Barriecito',
     maxWidth: '100',
     margin: '10% auto',
     position: 'relative',
-    opacity: '.5'
+    opacity: '.5',
+
 
    };
+   var titleStyle = {
+     textAlign: 'center',
+     color: 'yellow',
+   };
+
+
   return (
     <div style={navBarAddStyles}>
-    <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
-    <Navbar.Brand href="#home"> Fluoro Water</Navbar.Brand>
+    <h1 style={titleStyle}> PsyScouts Virtual Den</h1>
+    <Navbar collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
+    <Navbar.Brand href="#home"></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
     <Nav className="mr-auto">
-      <NavDropdown title="MENU" id="collasible-nav-dropdown">
+      <NavDropdown title="ABOUT" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1"><Link to="/About">About Us</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/About">Crew</Link></NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+
+    <Nav className="mr-auto">
+      <NavDropdown title="EVENTS" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1"><Link to="/PortalSmashers">Portal Smashers</Link></NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+
+    <Nav className="mr-auto">
+      <NavDropdown title="CONTACT" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1"><Link to="/Menu">MENU</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 
-      <Nav className="mr-auto">
-        <NavDropdown title="FLAVORS" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Green</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Pink</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Red</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Yellow</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Blue</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Purple</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-
-      <Nav className="mr-auto">
-        <NavDropdown title="ABOUT" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1"><Link to="/About">What is Fluoro Water</Link></NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-
-      <Nav className="mr-auto">
-        <NavDropdown title="TESTIMONIALS" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1"><Link to="/NewTestimonial" style={{position:'relative', zIndex:'500'}}>Share Your Story..</Link></NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
 
 
 
 
-      <Nav className="mr-auto">
-        <NavDropdown title="EVENTS" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1"><Link to="/PortalSmashers">Portal Smashers</Link></NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
 
       <Nav className="mr-auto">
         <NavDropdown title="PARTNERS" id="collasible-nav-dropdown">
