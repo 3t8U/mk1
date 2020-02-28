@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 75vmin;
   pointer-events: none;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,9 +24,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +33,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Home {
+  background-image: url('./galaxy1.jpg');
+  background-repeat: repeat;
+
+  background-attachment: fixed;
+  background-position: center;
 }
