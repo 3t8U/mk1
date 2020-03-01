@@ -7,6 +7,9 @@ import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import PortalSmashers from './components/PortalSmashers.jsx';
 import Intro from './components/Intro.jsx';
+import Menu from './components/Menu.jsx';
+import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
 
 function Home() {
   return (
@@ -15,6 +18,9 @@ function Home() {
       <Switch>
       <Route path='/PortalSmashers' component={PortalSmashers} />
       <Route exact path='/' component={Intro} />
+      <Route path='/Menu' component={Menu} />
+      <Route path='/Contact' component={Contact} />
+      <Route path='/About' component={About} />
       </Switch>
     </div>
 

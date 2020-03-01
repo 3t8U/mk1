@@ -37,7 +37,7 @@ function NavBar(props) {
     <Nav className="mr-auto">
       <NavDropdown title="ABOUT" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1"><Link to="/About">About Us</Link></NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.1"><Link to="/About">Crew</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Crew</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 
@@ -49,7 +49,7 @@ function NavBar(props) {
 
     <Nav className="mr-auto">
       <NavDropdown title="CONTACT" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"><Link to="/Menu">MENU</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/Contact">Drop us a line....</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 

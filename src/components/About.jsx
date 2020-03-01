@@ -1,0 +1,45 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+
+function About() {
+  var aboutStyles ={
+    color: 'yellow',
+    fontWeight: 'bold',
+    fontFamily: 'Barriecito',
+    border: '10px solid yellow',
+    borderRadius: '50%',
+    borderColor: 'yellow',
+    padding: '12%',
+    margin: '10vh',
+    fontSize: '30px'
+
+
+  }
+
+  var tagStyles ={
+    color: 'yellow',
+    fontWeight: 'bold',
+    fontFamily: 'Barriecito',
+    borderColor: 'yellow',
+    marginTop: '20px',
+    fontSize: '45px',
+    textAlign: 'center'
+
+
+    }
+
+
+
+
+return(
+<div>
+<h1 style={tagStyles}> We are the junkies of sound system culture.....</h1>
+<div style={aboutStyles}>
+CascadiaPsyScouts is a collective of Psychedelic Trance enthusiasts dedicated to keeping psytrance psychedelic, underground, and in the forest! We are located in the Cascadia Bioregion and host an annual gathering called Portal Smashers. The gathering is intended to stimulate the deeper regions of the human experience and explore the outer realms of sound and light through music and samadhi dance.
+</div>
+</div>
+);
+}
+
+export default About;
