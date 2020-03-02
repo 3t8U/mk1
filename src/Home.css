@@ -37,11 +37,15 @@
 }
 
 .Home {
-  background-image: url('./galaxy1.jpg');
-  background-repeat: repeat;
-  background-size: auto;
-  background-attachment: fixed;
-  background-position: center;
+
+  background-image: url('./nebula.gif');
+  background-repeat:
+  repeat;
+  background-size:cover;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:
+  center;
 }
 
 html {
