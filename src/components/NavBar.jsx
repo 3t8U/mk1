@@ -6,10 +6,11 @@ import fbicon from './fbicon.png';
 import paticon from './paticon.png';
 import emicon from './emicon.png';
 import logo from '../logo.png';
+import wlogo from './wlogo.png';
 
 function NavBar(props) {
   var navBarAddStyles = {
-    Color: 'yellow',
+    Color: 'yellow !important',
     fontWeight: 'bold',
     fontFamily: 'Barriecito',
 
@@ -66,14 +67,14 @@ function NavBar(props) {
   return (
     <div fixed="top"style={navBarAddStyles}>
     <h1 style={titleStyle}> PsyScouts Virtual Den</h1>
-    <Navbar  collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
-    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={logo} alt="banner"></img></Link></Navbar.Brand>
+    <Navbar  collapseOnSelect  expand="lg" bg="black" variant="dark" color="yellow !important">
+    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} alt="banner"></img></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
     <Nav className="mr-auto">
       <NavDropdown title="ABOUT" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"><Link to="/About">About Us</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1" color="yellow !important"><Link to="/About">About Us</Link></NavDropdown.Item>
         <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Crew</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
@@ -86,7 +87,7 @@ function NavBar(props) {
 
     <Nav className="mr-auto">
       <NavDropdown title="CONTACT" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="mailto:Cascadiapsyscouts@gmail"><img style={fbStyles} src={emicon} alt="banner"></img></NavDropdown.Item>
+        <NavDropdown.Item href="mailto:Cascadiapsyscouts@gmail.com"><img style={fbStyles} src={emicon} alt="banner"></img></NavDropdown.Item>
         <NavDropdown.Item href="https://www.facebook.com/cascadiapsyscouts/" target="_blank"><img style={fbStyles} src={fbicon} alt="banner"></img></NavDropdown.Item>
         <NavDropdown.Item href="https://www.patreon.com/cascadiapsyscouts" target="_blank"><img style={patStyles} src={paticon} alt="banner"></img></NavDropdown.Item>
       </NavDropdown>
@@ -105,7 +106,7 @@ function NavBar(props) {
         </NavDropdown>
       </Nav>
 
-
+      <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} alt="banner"></img></Link></Navbar.Brand>
     </Navbar.Collapse>
   </Navbar>
     </div>
