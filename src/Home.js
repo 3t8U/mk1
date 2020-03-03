@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from './components/Logo.jsx';
-import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Home.css';
 import NavBar from './components/NavBar.jsx';
 import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';

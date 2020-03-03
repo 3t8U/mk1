@@ -2,10 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import GoogleFontLoader from 'react-google-font-loader';
 import { Link } from 'react-router-dom';
-import fbicon from './fbicon.png';
-import paticon from './paticon.png';
-import emicon from './emicon.png';
-import logo from '../logo.png';
+
 
 function NavBar(props) {
   var navBarAddStyles = {
@@ -28,46 +25,12 @@ function NavBar(props) {
      fontSize: '75px'
    };
 
-   var fbStyles = {
-     display: 'block',
-     marginLeft: 'auto',
-     marginRight: 'auto',
-     width: '50%',
-     toppadding:'5%',
-     maxWidth: '40px',
-     maxHeight: 'auto',
-
-
-   };
-
-   var patStyles = {
-    display: 'block',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    width: '50%',
-    maxWidth: '150px',
-    maxHeight: '20%',
-    imageAlign: 'center'
-
-   };
-
-   var homeStyles = {
-    display: 'block',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    width: '50%',
-    maxWidth: '150px',
-    maxHeight: '20%',
-    imageAlign: 'center',
-    color: 'yellow'
-
-   };
 
   return (
-    <div fixed="top"style={navBarAddStyles}>
+    <div style={navBarAddStyles}>
     <h1 style={titleStyle}> PsyScouts Virtual Den</h1>
-    <Navbar  collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
-    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={logo} alt="banner"></img></Link></Navbar.Brand>
+    <Navbar collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
+    <Navbar.Brand href="#home"></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
@@ -86,9 +49,7 @@ function NavBar(props) {
 
     <Nav className="mr-auto">
       <NavDropdown title="CONTACT" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="mailto:Cascadiapsyscouts@gmail"><img style={fbStyles} src={emicon} alt="banner"></img></NavDropdown.Item>
-        <NavDropdown.Item href="https://www.facebook.com/cascadiapsyscouts/" target="_blank"><img style={fbStyles} src={fbicon} alt="banner"></img></NavDropdown.Item>
-        <NavDropdown.Item href="https://www.patreon.com/cascadiapsyscouts" target="_blank"><img style={patStyles} src={paticon} alt="banner"></img></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/Contact">Drop us a line....</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 

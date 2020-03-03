@@ -9,12 +9,12 @@ import Menu from './Menu.jsx'
  function Intro() {
 
    return(
-     <header className="App-header">
+     <div className="App-header">
      <NavBar/>
      <div className = "logoStyle">
      <Logo/>
      </div>
-     </header>
+     </div>
 
    );
  }
