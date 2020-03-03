@@ -26,7 +26,7 @@ function NavBar(props) {
    var titleStyle = {
      textAlign: 'center',
      color: 'yellow',
-     fontSize: '75px'
+     fontSize: '75px',
    };
 
    var fbStyles = {
