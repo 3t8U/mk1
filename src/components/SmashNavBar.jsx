@@ -1,5 +1,6 @@
 
 import React from 'react';
+import './PortalSmashers.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import GoogleFontLoader from 'react-google-font-loader';
 import { Link } from 'react-router-dom';
@@ -69,9 +70,9 @@ function SmashNavBar(props) {
 
   return (
     <div style={navBarAddStyles}>
-    <h1 style={titleStyle}> PsyScouts Virtual Den</h1>
+    <h1 style={titleStyle}> PORTAL SMASHERS</h1>
     <Navbar collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
-    <Navbar.Brand href="#home"></Navbar.Brand>
+    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
@@ -110,7 +111,7 @@ function SmashNavBar(props) {
         </NavDropdown>
       </Nav>
 
-
+      <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo}className="App-mlogo"  alt="banner"></img></Link></Navbar.Brand>
     </Navbar.Collapse>
   </Navbar>
     </div>

@@ -4,3 +4,18 @@
   background-image: url('./stage.jpg');
   background-color: red;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-mlogo {
+    animation: App-mlogo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-mlogo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
