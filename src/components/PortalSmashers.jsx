@@ -5,7 +5,7 @@ import flyertrans from './flyertrans.png';
 import './PortalSmashers.css';
 import SmashNavBar from './SmashNavBar.jsx'
 
-function PortalSmashers() {
+function PortalSmashers(props) {
   var smashersAddStyles = {
     display: 'block',
     marginLeft: 'auto',
@@ -18,7 +18,7 @@ function PortalSmashers() {
     border: 'solid 10px blue',
     borderRadius: '5%',
     filter: "invert(1)",
-    
+
   };
 
   var linkAddStyles ={
@@ -51,6 +51,7 @@ function PortalSmashers() {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'auto'
   }
+  console.log(props.selected);
   return (
 
     <div className="overLord">

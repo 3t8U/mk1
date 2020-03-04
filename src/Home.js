@@ -27,7 +27,8 @@ function Home() {
     <div className="Home">
       <Switch>
       <Route exact path='/' component={Intro} />
-      <Route path='/PortalSmashers' component={PortalSmashers} />
+      <Route exact path='/PortalSmashers' render={() => <PortalSmashers selected={"main"} />} />
+      <Route path='/PortalSmashers/about' render={() => <PortalSmashers selected={"about"} />} />
       <Route path='/Menu' component={Menu} />
       <Route path='/Contact' component={Contact} />
       <Route path='/About' component={About} />
