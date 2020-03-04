@@ -77,16 +77,16 @@
 
   background-image: url('./nebula.gif'),
   url('./nebula.gif');
-  background-position: cover,
-  bottom center;
-  background-repeat:repeat;
+  background-position: cover;
   background-size:cover;
+
+  background-repeat:repeat;
   margin-top: auto;
   margin-bottom: auto;
+  position: relative;
 
   background-attachment:fixed;
-  background-position:
-  center;
+  background-position: center;
 }
 
 /* html {

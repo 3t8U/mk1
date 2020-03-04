@@ -6,29 +6,42 @@ import NavBar from './NavBar.jsx'
 
 function PortalSmashers() {
   var smashersAddStyles = {
-    marginBottom: '90%',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '50%',
     padding: '.25%',
-
-    margin: '30px',
     border:'15px solid black',
-    width: '80%',
-    opacity: '',
-    height: '50vh',
+    opacity: '.85',
     blurRadius: '10px',
+    border: 'solid 10px yellow',
+    borderRadius: '5%'
   };
+
   var linkAddStyles ={
-    marginBottom: '25%',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '50%',
     color:'#FFD300',
     fontSize: '100px',
     fontWeight: 'bolder',
-  }
+    fontFamily: 'Green Fuz V1',
+    textAlign: 'center',
+
+  };
 
   var miniLinkAddStyles ={
-    marginBottom: '25%',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '50%',
     color:'#FFD300',
     fontSize: '75px',
     fontWeight: 'bolder',
-  }
+    fontFamily: 'Green Fuz V1',
+    textAlign: 'center'
+  };
 
   var bannerStyle= {
     backgroundImage: "url(" + {stage} + ")",
@@ -41,13 +54,9 @@ function PortalSmashers() {
     <NavBar/>
     <div className="banner">
     <img style={smashersAddStyles} src={smashers} alt="banner"></img>
-    <p><a style={linkAddStyles}href="https://www.facebook.com/events/somewhere-in-the-forest-of-the-cascadia-wilderness/portal-smashers-2020-the-re-smashing/413441849352546/">Portal Smashers II</a></p>
+    <h1><a style={linkAddStyles}href="https://www.facebook.com/events/somewhere-in-the-forest-of-the-cascadia-wilderness/portal-smashers-2020-the-re-smashing/413441849352546/">Portal Smashers II</a></h1>
     <p style={miniLinkAddStyles}>"The Re-Smashing" </p>
     </div>
-
-    <div className="link">
-   </div>
-
    </div>
 
   );

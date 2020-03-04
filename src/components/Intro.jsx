@@ -27,9 +27,7 @@ import Menu from './Menu.jsx'
    return(
      <div className="App-header">
      <NavBar/>
-     <div style={logoStyles}>
-     <Logo/>
-     </div>
+     
      </div>
 
    );
