@@ -2,7 +2,7 @@ import React from 'react';
 import smashers from './smashers.jpg'
 import stage from './stage.jpg';
 import './PortalSmashers.css';
-import NavBar from './NavBar.jsx'
+import SmashNavBar from './SmashNavBar.jsx'
 
 function PortalSmashers() {
   var smashersAddStyles = {
@@ -51,7 +51,7 @@ function PortalSmashers() {
   return (
 
     <div className="overLord">
-    <NavBar/>
+    <SmashNavBar/>
     <div className="banner">
     <img style={smashersAddStyles} src={smashers} alt="banner"></img>
     <h1><a style={linkAddStyles}href="https://www.facebook.com/events/somewhere-in-the-forest-of-the-cascadia-wilderness/portal-smashers-2020-the-re-smashing/413441849352546/">Portal Smashers II</a></h1>

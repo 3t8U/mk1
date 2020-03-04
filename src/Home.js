@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from './components/Logo.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar.jsx';
 import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -25,9 +25,6 @@ function Home() {
 
   return (
     <div className="Home">
-        <header style={logoStyles}>
-        <Logo/>
-        </header>
       <Switch>
       <Route exact path='/' component={Intro} />
       <Route path='/PortalSmashers' component={PortalSmashers} />
