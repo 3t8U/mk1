@@ -6,11 +6,9 @@ import { Switch, Route } from 'react-router-dom';
 function Menu() {
   return (
     <div className="Menu">
-      <div className="App-header">
-
       <NavBar/>
       </div>
-    </div>
+  
   );
 }
 
