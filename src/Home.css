@@ -87,7 +87,7 @@
 
 .Home {
 
-  background-image: url('./gifs/tileBG.gif');
+  background-image: url('./tileBG.gif');
   background-position: cover;
   background-size:cover;
   background-repeat: no-repeat;
@@ -107,6 +107,6 @@
 } */
 
 .body{
-  background-image: url('./gifs/tileBG.gif');
+  background-image: url('./tileBG.gif');
   font-family: 'Barriecito', ;
 }

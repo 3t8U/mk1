@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 import fbicon from './icons/fbicon.png';
 import paticon from './icons/paticon.png';
 import emicon from './icons/emicon.png';
-import logo from '../images/logo.png';
+import logo from './images/logo.png';
 import wlogo from './images/wlogo.png';
 
 function NavBar(props) {
