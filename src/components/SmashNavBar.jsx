@@ -3,6 +3,7 @@ import React from 'react';
 import './PortalSmashers.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import GoogleFontLoader from 'react-google-font-loader';
+import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
 import fbicon from './fbicon.png';
 import paticon from './paticon.png';

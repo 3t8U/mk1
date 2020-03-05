@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import GoogleFontLoader from 'react-google-font-loader';
 import { Link } from 'react-router-dom';
+import YouTube from 'react-youtube';
 import fbicon from './fbicon.png';
 import paticon from './paticon.png';
 import emicon from './emicon.png';
@@ -68,7 +69,7 @@ function NavBar(props) {
     <div fixed="top"style={navBarAddStyles}>
     <h1 style={titleStyle}> PsyScouts Virtual Den</h1>
     <Navbar  collapseOnSelect  expand="lg" bg="black" variant="dark" color="yellow !important">
-    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} alt="banner"></img></Link></Navbar.Brand>
+    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} className="App-mlogo"  alt="banner"></img></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
@@ -110,14 +111,12 @@ function NavBar(props) {
     <NavDropdown.Item href="https://www.cascadiapsychedelic.com/" target="_blank">Cascadia Psychedelic</NavDropdown.Item>
     <NavDropdown.Item href="https://www.facebook.com/VJNels0nMandala/" target="_blank">VJ Nelson Mandala</NavDropdown.Item>
     <NavDropdown.Item href="https://www.facebook.com/omgalaser/" target="_blank">OMG a Laser</NavDropdown.Item>
-
-
     <NavDropdown.Item href="#action/3.1"><Link to="/Video">U.T.T.A. Chaos</Link></NavDropdown.Item>
 
     </NavDropdown>
     </Nav>
 
-    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} alt="banner"></img></Link></Navbar.Brand>
+    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo}className="App-mlogo" alt="banner"></img></Link></Navbar.Brand>
     </Navbar.Collapse>
     </Navbar>
     </div>
