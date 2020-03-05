@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './fonts/Barriecito-Regular.ttf'
-import './fonts/Green Fuz V1.ttf'
+
 import WebFont from 'webfontloader';
 import Home from './Home';
 import * as serviceWorker from './serviceWorker';
