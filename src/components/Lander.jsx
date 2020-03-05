@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../logo.png';
+import logo from '../images/logo.png';
 import { Link } from 'react-router-dom';
 
 
 
- function Logo() {
+ function Lander() {
 
 
 
@@ -14,4 +14,4 @@ import { Link } from 'react-router-dom';
    );
  }
 
-export default Logo;
+export default Lander;

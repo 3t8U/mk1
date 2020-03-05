@@ -1,6 +1,6 @@
 .further{
-  background-image: url(./stage.jpg) ,
-  url(./galaxy1.jpg);
+  background-image: url(./images/stage.jpg) ,
+  url(./images/galaxy1.jpg);
   opacity: .5;
 
 
@@ -11,8 +11,8 @@
 }
 
  {
-  background-image: url(./stage.jpg),
-  url('./tileBG.gif' );
+  background-image: url(./images/stage.jpg),
+  url('./gifs/tileBG.gif' );
   opacity: .5,inherit;
 }
 

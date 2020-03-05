@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import stage from './stage.jpg'
+import stage from './images/stage.jpg'
 import './About.css';
 import NavBar from './NavBar.jsx';
 

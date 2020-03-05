@@ -1,6 +1,6 @@
 body{
   background-image:
-  url('./tileBG.gif' );
+  url('./gifs/tileBG.gif' );
   opacity:.5,
    1;
   background-position: cover;
@@ -9,7 +9,7 @@ body{
 }
 
 .logoFloss {
-  
+
   background-repeat: no-repeat;
   background-size:cover;
   opacity: .5;

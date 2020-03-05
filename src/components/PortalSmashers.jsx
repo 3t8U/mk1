@@ -1,7 +1,7 @@
 import React from 'react';
-import smashers from './smashers.jpg'
-import stage from './stage.jpg';
-import flyertrans from './flyertrans.png';
+import smashers from './images/smashers.jpg'
+import stage from './images/stage.jpg';
+import flyertrans from './images/flyertrans.png';
 import './PortalSmashers.css';
 import SmashNavBar from './SmashNavBar.jsx'
 

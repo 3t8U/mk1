@@ -3,7 +3,7 @@ import Logo from './Logo.jsx';
 import NavBar from './NavBar.jsx'
 import { Link } from 'react-router-dom';
 import Menu from './Menu.jsx'
-import tileBG from './tileBG.gif'
+import tileBG from './gifs/tileBG.gif'
 import './Intro.css';
 
  function Intro() {

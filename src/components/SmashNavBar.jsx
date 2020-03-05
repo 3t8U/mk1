@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 import fbicon from './icons/fbicon.png';
 import paticon from './icons/paticon.png';
 import emicon from './icons/emicon.png';
-import logo from '../logo.png';
-import wlogo from './wlogo.png';
+import logo from '../images/logo.png';
+import wlogo from './images/wlogo.png';
 
 
 function SmashNavBar(props) {
