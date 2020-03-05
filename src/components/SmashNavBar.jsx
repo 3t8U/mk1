@@ -5,9 +5,9 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import GoogleFontLoader from 'react-google-font-loader';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
-import fbicon from './fbicon.png';
-import paticon from './paticon.png';
-import emicon from './emicon.png';
+import fbicon from './icons/fbicon.png';
+import paticon from './icons/paticon.png';
+import emicon from './icons/emicon.png';
 import logo from '../logo.png';
 import wlogo from './wlogo.png';
 
