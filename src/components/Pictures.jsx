@@ -13,125 +13,160 @@ import s8 from './smashimages/s8.jpg';
 import s9 from './smashimages/s9.jpg';
 import s10 from './smashimages/s10.jpg';
 import s11 from './smashimages/s11.jpg';
-import NavBar from './NavBar.jsx'
+import SmashNavBar from './SmashNavBar.jsx'
+import './PortalSmashers.css';
 
 function Pictures (props){
+ var caroStyles={
+   display: 'flex',
+   flexDirection: 'column',
+   alignItems: 'center',
+   justifyContent: 'center',
+   marginTop: 'auto',
+   marginBottom: 'auto',
+   position: 'relative',
+   imageSize: 'cover',
 
+ }
+
+ var imgStyles={
+   maxWidth: '1000px',
+   minWidth: '600px',
+   height: 'auto',
+   minHeight: '500px',
+   display: 'flex',
+   flexDirection: 'column',
+   alignItems: 'center',
+   justifyContent: 'center',
+   marginTop: 'auto',
+   marginBottom: 'auto',
+   position: 'relative',
+   imageSize: 'cover',
+   border: 'solid 10px yellow',
+   borderRadius: '5%'
+
+ }
 return(
 
- <NavBar/>
+ <div>
+ <SmashNavBar/>
 
-  <Carousel>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s1}
-        alt="Portal Smashers Image"
-      />
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s2}
-        alt="Portal Smashers Image"
-      />
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s3}
-        alt="Portal Smashers Image"
-      />
+  <div style={caroStyles}>
+ <Carousel>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s3}
+       alt="Portal Smashers Image"
+     />
+     <Carousel.Caption>
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s4}
-        alt="Portal Smashers Image"
-      />
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s2}
+       alt="Portal Smashers Image"
+     />
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s5}
-        alt="Portal Smashers Image"
-      />
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s4}
+       alt="Portal Smashers Image"
+     />
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s6}
-        alt="Portal Smashers Image"
-      />
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s1}
+       alt="Portal Smashers Image"
+     />
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s7}
-        alt="Portal Smashers Image"
-      />
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s5}
+       alt="Portal Smashers Image"
+     />
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s8}
-        alt="Portal Smashers Image"
-      />
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s6}
+       alt="Portal Smashers Image"
+     />
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src={s9}
-        alt="Portal Smashers Image"
-      />
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s7}
+       alt="Portal Smashers Image"
+     />
 
-      <Carousel.Caption>
-        <h3>Portal Smashers I</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-  </Carousel>
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s8}
+       alt="Portal Smashers Image"
+     />
+
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+   <Carousel.Item>
+     <img
+       className="d-block w-100" style={imgStyles}
+       src={s9}
+       alt="Portal Smashers Image"
+     />
+
+     <Carousel.Caption>
+       <h3>Portal Smashers I</h3>
+       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+     </Carousel.Caption>
+   </Carousel.Item>
+ </Carousel>
+ </div>
+ </div>
+
 
 );
 }
+
 
 export default Pictures;
