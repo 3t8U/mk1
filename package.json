@@ -1,4 +1,7 @@
+
+
 {
+  "homepage": " https://3t8u.github.io/mk1/"
   "name": "mk1",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +24,8 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
