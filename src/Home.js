@@ -12,7 +12,7 @@ import Menu from './components/Menu.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Video from './components/Video.jsx';
-
+import Pictures from './components/Pictures.jsx';
 
 function Home() {
     var logoStyles= {
@@ -31,7 +31,8 @@ function Home() {
       <Switch>
       <Route exact path='/' component={Intro} />
       <Route exact path='/PortalSmashers' render={() => <PortalSmashers selected={"main"} />} />
-      <Route path='/PortalSmashers/about' render={() => <PortalSmashers selected={"about"} />} />
+      <Route path='/PortalSmashers/About' render={() => <PortalSmashers selected={"about"} />} />
+      <Route path='/PortalSmashers/Pictures' render={() => <PortalSmashers selected={"Pictures"} />} />
       <Route path='/Menu' component={Menu} />
       <Route path='/Video' component={Video} />
       <Route path='/Contact' component={Contact} />

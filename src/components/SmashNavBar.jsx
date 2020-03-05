@@ -10,7 +10,7 @@ import paticon from './icons/paticon.png';
 import emicon from './icons/emicon.png';
 import logo from './images/logo.png';
 import wlogo from './images/wlogo.png';
-
+import Pictures from './Pictures.jsx';
 
 function SmashNavBar(props) {
   var navBarAddStyles = {
@@ -92,7 +92,7 @@ function SmashNavBar(props) {
 
     <Nav className="mr-auto">
       <NavDropdown title="PICTURES" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"><Link to="/Contact">Pictures</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="PortalSmashers/Pictures/">Pictures</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 
