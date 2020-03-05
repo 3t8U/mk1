@@ -44,7 +44,7 @@ function About() {
 
 return(
 
-  <div>
+  <div className="navi">
   <NavBar/>
 <h1 style={tagStyles}> We are the junkies of sound system culture.....</h1>
 <div style={aboutStyles} className="further">

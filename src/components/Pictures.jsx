@@ -48,7 +48,7 @@ function Pictures (props){
  }
 return(
 
- <div>
+ <div className="navi">
  <SmashNavBar/>
 
 

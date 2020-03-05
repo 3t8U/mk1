@@ -17,7 +17,7 @@ function SmashNavBar(props) {
     Color: 'yellow',
     fontWeight: 'bold',
     fontFamily: 'Barriecito',
-
+    zIndex: '1',
     maxWidth: '100',
     margin: '10% auto',
     position: 'relative',

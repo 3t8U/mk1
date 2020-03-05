@@ -7,7 +7,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-mlogo {
-    animation: App-mlogo-spin infinite 10s linear;
+    animation: App-mlogo-spin infinite reverse 10s linear;
   }
 }
 
@@ -26,4 +26,9 @@ link {
 
 h3 , p {
   color: yellow;
+}
+
+.navi {
+  position: absolute;
+  z-index: 1;
 }

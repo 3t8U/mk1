@@ -14,7 +14,7 @@ function NavBar(props) {
     Color: 'yellow !important',
     fontWeight: 'bold',
     fontFamily: 'Barriecito',
-
+    zIndex: '1',
     maxWidth: '100',
     margin: '10% auto',
     position: 'relative',

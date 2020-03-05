@@ -26,3 +26,8 @@ body{
   border-radius: 100%;
 
 }
+
+.navi {
+  position: absolute;
+  z-index: 1;
+}
