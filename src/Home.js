@@ -37,6 +37,7 @@ function Home() {
       <Route path='/Video' component={Video} />
       <Route path='/Contact' component={Contact} />
       <Route path='/About' component={About} />
+      <Route path='/Pictures' component={Pictures} />
       </Switch>
     </div>
 
