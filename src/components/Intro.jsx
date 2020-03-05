@@ -3,12 +3,15 @@ import Logo from './Logo.jsx';
 import NavBar from './NavBar.jsx'
 import { Link } from 'react-router-dom';
 import Menu from './Menu.jsx'
-
-
+import tileBG from './tileBG.gif'
+import './Intro.css';
 
  function Intro() {
 
    var logoStyles ={
+     backgroundImage: "url(" + {tileBG} + ")",
+     backgroundRepeat: 'no-repeat',
+     backgroundSize: 'cover',
      display: 'block',
      marginLeft: 'auto',
      marginRight: 'auto',
@@ -25,11 +28,13 @@ import Menu from './Menu.jsx'
 
 
    return(
-     <div className="App-header">
+     <div>
      <NavBar/>
-    
+     <div className="logoFloss">
+     <Logo/>
      </div>
 
+     </div>
    );
  }
 

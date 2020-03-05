@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 
    return(
-     <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
+     <Link to="/Intro"><img src={logo} className="App-logo" alt="logo" /></Link>
    );
  }
 

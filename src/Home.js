@@ -1,8 +1,9 @@
 import React from 'react';
 import Logo from './components/Logo.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar.jsx';
+import YouTube from 'react-youtube';
 import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import PortalSmashers from './components/PortalSmashers.jsx';
@@ -10,6 +11,8 @@ import Intro from './components/Intro.jsx';
 import Menu from './components/Menu.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
+import Video from './components/Video.jsx';
+
 
 function Home() {
     var logoStyles= {
@@ -25,13 +28,12 @@ function Home() {
 
   return (
     <div className="Home">
-        <header style={logoStyles}>
-        <Logo/>
-        </header>
       <Switch>
       <Route exact path='/' component={Intro} />
-      <Route path='/PortalSmashers' component={PortalSmashers} />
+      <Route exact path='/PortalSmashers' render={() => <PortalSmashers selected={"main"} />} />
+      <Route path='/PortalSmashers/about' render={() => <PortalSmashers selected={"about"} />} />
       <Route path='/Menu' component={Menu} />
+      <Route path='/Video' component={Video} />
       <Route path='/Contact' component={Contact} />
       <Route path='/About' component={About} />
       </Switch>
