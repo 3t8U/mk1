@@ -8,6 +8,7 @@
   filter: invert(100%);
   opacity: 1;
   position: relative;
+  justify-content: center;
 
 
   /* -webkit-animation: color-change 1s infinite;npm
