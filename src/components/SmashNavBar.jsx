@@ -79,7 +79,7 @@ function SmashNavBar(props) {
 
     <Nav className="mr-auto">
       <NavDropdown title="THE EVENT" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"><Link to="/About">About Portal Smashers</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/Enter">About Portal Smashers</Link></NavDropdown.Item>
         <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Location</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
