@@ -5,7 +5,7 @@ import './Enter.css';
 import '../index.css';
 import { Navbar, Nav, NavDropdown, Container, Col, Row } from 'react-bootstrap';
 import wlogo from './images/wlogo.png';
-
+import logoBack1 from './gifs/logoBack1.gif';
 
  function Start() {
 var contStyles={
@@ -31,6 +31,8 @@ var homeStyles = {
  imageAlign: 'center',
  color: 'yellow',
  padding: '10%',
+ backgroundImage: "url(" + {logoBack1} + ")",
+ zIndex: '2'
 
 
 };
@@ -42,7 +44,8 @@ var massStyles={
   padding: '20%',
   textAlign: 'center',
   color: 'yellow',
-  fontFamily: 'Homeworld Translator',
+  fontFamily: 'Vaporized',
+  fontSize: '50px'
 }
 
 var centerIsleStyles ={
@@ -91,7 +94,7 @@ var niStyles={
     <Col style={onStyles}>
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>EVENTS</div>
     </Col>
-    <Col >2
+    <Col >
       <div> </div>
     </Col>
     <Col  style={thStyles}>
@@ -100,7 +103,7 @@ var niStyles={
   </Row>
 
   <Row>
-    <Col >4
+    <Col >
       <div > </div>
     </Col>
     <Col lg={6} style={centerIsleStyles}>
@@ -108,19 +111,19 @@ var niStyles={
       <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
       </div>
     </Col>
-    <Col >6
+    <Col >
       <div> </div>
     </Col>
   </Row>
 
   <Row>
-    <Col style={seStyles}>7
+    <Col style={seStyles}>
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>MAKE CONTACT</div>
     </Col>
-    <Col >8
+    <Col >
       <div> </div>
     </Col>
-    <Col style={niStyles}>9
+    <Col style={niStyles}>
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>ABOUT</div>
     </Col>
   </Row>

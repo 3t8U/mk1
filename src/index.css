@@ -23,6 +23,11 @@ code {
 }
 
 @font-face {
-  font-family: 'Homeworld Translator';
+  font-family: 'Homeworld Translator ';
   src: local('Homeworld Translator'), url(./fonts/homewt.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Vaporized';
+  src: local('Vaporized'), url(./fonts/vaporizedbb_reg.otf) format('truetype');
 }
