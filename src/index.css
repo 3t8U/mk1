@@ -21,3 +21,8 @@ code {
   font-family: 'Green Fuz V1';
   src: local('Green Fuz V1'), url(./fonts/Green Fuz V1.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Homeworld Translator';
+  src: local('Homeworld Translator'), url(./fonts/homewt.ttf) format('truetype');
+}

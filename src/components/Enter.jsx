@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './images/logo.png';
 import { Link } from 'react-router-dom';
 import './Enter.css';
+import '../index.css';
 import { Navbar, Nav, NavDropdown, Container, Col, Row } from 'react-bootstrap';
 import wlogo from './images/wlogo.png';
 
@@ -41,36 +42,44 @@ var massStyles={
   padding: '20%',
   textAlign: 'center',
   color: 'yellow',
+  fontFamily: 'Homeworld Translator',
 }
 
 var centerIsleStyles ={
-display: 'flex',
+  display: 'flex',
+  justifyContent: 'center',
+  itemAlign: 'center',
+  paddingTop: '1%',
 }
 
 var onStyles={
   paddingBottom: '5%',
-  paddingLeft: '10%',
+  paddingLeft: '2%',
   marginTop: '5%',
+  width: '75%',
 
 
 }
 var thStyles={
   paddingBottom: '5%',
-  paddingRight: '10%',
+  paddingRight: '2%',
   marginTop: '5%',
+  width: '75%',
 
 }
 
 var seStyles={
-  paddingTop: '10%',
-  paddingLeft: '10%',
+  paddingTop: '5%',
+  paddingLeft: '2%',
   marginBottom: '5%',
+  width: '75%',
 }
 
 var niStyles={
-  paddingTop: '10%',
-  paddingRight: '10%',
+  paddingTop: '5%',
+  paddingRight: '2%',
   marginBottom: '5%',
+  width: '75%',
 
 }
 
@@ -79,19 +88,19 @@ var niStyles={
      <div style={massStyles}>
      <Container  >
   <Row >
-    <Col md={4} style={onStyles}>
+    <Col style={onStyles}>
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>EVENTS</div>
     </Col>
-    <Col md={4}>2
+    <Col >2
       <div> </div>
     </Col>
-    <Col md={4}  style={thStyles}>
+    <Col  style={thStyles}>
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>LINKS...</div>
     </Col>
   </Row>
 
   <Row>
-    <Col md={4} >4
+    <Col >4
       <div > </div>
     </Col>
     <Col lg={6} style={centerIsleStyles}>
@@ -99,19 +108,19 @@ var niStyles={
       <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
       </div>
     </Col>
-    <Col md={4}>6
+    <Col >6
       <div> </div>
     </Col>
   </Row>
 
   <Row>
-    <Col md={4} style={seStyles}>7
+    <Col style={seStyles}>7
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>MAKE CONTACT</div>
     </Col>
-    <Col md={4}>8
+    <Col >8
       <div> </div>
     </Col>
-    <Col md={4} style={niStyles}>9
+    <Col style={niStyles}>9
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>ABOUT</div>
     </Col>
   </Row>
