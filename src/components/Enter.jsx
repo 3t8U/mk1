@@ -22,56 +22,74 @@ var homeStyles = {
  display: 'block',
  marginLeft: 'auto',
  marginRight: 'auto',
+ marginTop: 'auto',
+ marginBottom: 'auto',
  width: '50%',
  maxWidth: '150px',
  maxHeight: '20%',
  imageAlign: 'center',
- color: 'yellow'
+ color: 'yellow',
+ padding: '10%',
+
 
 };
 
+var massStyles={
+  display: 'flex',
+  justifyContent: 'center',
+  itemAlign: 'center',
+  padding: '20%',
+}
+
+var objectCenterStyles={
+
+  
+
+}
+
 
    return(
-     <Container >
-  <Row>
-    <Col lg={4}>1
+     <div style={massStyles}>
+     <Container  >
+  <Row >
+    <Col sm={4}>1
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
-    <Col lg={4}>2
+    <Col sm={4}>2
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
-    <Col lg={4}>3
+    <Col sm={4}>3
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
   </Row>
 
   <Row>
-    <Col lg={4}>4
-      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
+    <Col sm={4}>4
+      <div> <img style={objectCenterStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
-    <Col lg={4}>5
+    <Col sm={4}>5
       <div>
       <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
       </div>
     </Col>
-    <Col lg={4}>6
+    <Col sm={4}>6
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
   </Row>
 
   <Row>
-    <Col lg={4}>7
+    <Col sm={4}>7
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
-    <Col lg={4}>8
+    <Col sm={4}>8
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
-    <Col lg={4}>9
+    <Col sm={4}>9
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></div>
     </Col>
   </Row>
 </Container>
-
+ </div>
 
 
 
