@@ -32,7 +32,7 @@ var homeStyles = {
  color: 'yellow',
  padding: '10%',
  backgroundImage: "url(" + {logoBack1} + ")",
- zIndex: '2'
+ zIndex: '2',
 
 
 };
@@ -53,6 +53,9 @@ var centerIsleStyles ={
   justifyContent: 'center',
   itemAlign: 'center',
   paddingTop: '1%',
+  image: "url(" + {logoBack1} + ")",
+  zIndex: '1',
+
 }
 
 var onStyles={
@@ -91,8 +94,10 @@ var niStyles={
      <div style={massStyles}>
      <Container  >
   <Row >
-    <Col style={onStyles}>
+    <Col style={onStyles} >
+    <div >
       <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>EVENTS</div>
+      </div>
     </Col>
     <Col >
       <div> </div>
@@ -106,9 +111,10 @@ var niStyles={
     <Col >
       <div > </div>
     </Col>
-    <Col lg={6} style={centerIsleStyles}>
+    <Col lg={6} style={centerIsleStyles} className="trash" >
       <div>
       <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
+
       </div>
     </Col>
     <Col >

@@ -31,3 +31,26 @@ code {
   font-family: 'Vaporized';
   src: local('Vaporized'), url(./fonts/vaporizedbb_reg.otf) format('truetype');
 }
+
+/* New Fonts... */
+
+
+@font-face {
+  font-family: 'Buried Before';
+  src: local('Buried Before'), url(./fonts/BuriedBeforeBB_Reg.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Buried Before Bugs';
+  src: local('Buried Before Bugs'), url(./fonts/BuriedBeforeBugsBB_Reg.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Buried Before Bugs';
+  src: local('Buried Before Bugs'), url(./fonts/BuriedBeforeBugsBB_Reg.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Buried Before Bugs';
+  src: local('Buried Before Bugs'), url(./fonts/BuriedBeforeBugsBB_Reg.otf) format('truetype');
+}
