@@ -44,7 +44,7 @@ var massStyles={
   padding: '20%',
   textAlign: 'center',
   color: 'yellow',
-  fontFamily: 'Vaporized',
+  fontFamily: 'Inhuman',
   fontSize: '50px'
 }
 

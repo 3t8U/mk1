@@ -46,11 +46,46 @@ code {
 }
 
 @font-face {
-  font-family: 'Buried Before Bugs';
-  src: local('Buried Before Bugs'), url(./fonts/BuriedBeforeBugsBB_Reg.otf) format('truetype');
+  font-family: 'Trash Cinema Ital';
+  src: local('Trash Cinema Ital'), url(./fonts/TrashCinemaBB_ital.otf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Buried Before Bugs';
-  src: local('Buried Before Bugs'), url(./fonts/BuriedBeforeBugsBB_Reg.otf) format('truetype');
+  font-family: 'Trash Cinema';
+  src: local('Trash Cinema'), url(./fonts/TrashCinemaBB.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Dark Arts';
+  src: local('Dark Arts'), url(./fonts/DARKAB__.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'Wretched Remains';
+  src: local('Wretched Remains'), url(./fonts/WretchedRemainsBB.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inhuman';
+  src: local('Inhuman'), url(./fonts/InhumanBB.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Umberto';
+  src: local('Umberto'), url(./fonts/umberto.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Sanitarium';
+  src: local('Sanitarium'), url(./fonts/SanitariumBB.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Destroy Earth';
+  src: local('Destroy Earth'), url(./fonts/DestroyEarthBB.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Destroy Earth Rough';
+  src: local('Destroy Earth Rough'), url(./fonts/DestroyEarthRoughBB.otf) format('truetype');
 }

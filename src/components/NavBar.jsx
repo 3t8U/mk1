@@ -12,8 +12,8 @@ import wlogo from './images/wlogo.png';
 function NavBar(props) {
   var navBarAddStyles = {
     Color: 'yellow !important',
-    fontWeight: 'bold',
-    fontFamily: 'Barriecito',
+    
+    fontFamily: 'Inhuman',
     zIndex: '1',
     maxWidth: '100',
     margin: '10% auto',

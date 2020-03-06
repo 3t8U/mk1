@@ -29,7 +29,7 @@ function PortalSmashers(props) {
     color:'#FFD300',
     fontSize: '100px',
     fontWeight: 'bolder',
-    fontFamily: 'Green Fuz V1',
+    fontFamily: 'Inhuman',
     textAlign: 'center',
 
   };
@@ -42,7 +42,7 @@ function PortalSmashers(props) {
     color:'#FFD300',
     fontSize: '75px',
     fontWeight: 'bolder',
-    fontFamily: 'Green Fuz V1',
+    fontFamily: 'Inhuman',
     textAlign: 'center'
   };
 
@@ -58,8 +58,6 @@ function PortalSmashers(props) {
     <SmashNavBar/>
     <div className="banner">
     <img className="flip-scale-up-hor" style={smashersAddStyles} src={flyertrans} alt="banner"></img>
-    <h1><a style={linkAddStyles}href="https://www.facebook.com/events/somewhere-in-the-forest-of-the-cascadia-wilderness/portal-smashers-2020-the-re-smashing/413441849352546/">Portal Smashers II</a></h1>
-    <p style={miniLinkAddStyles}>"The Re-Smashing" </p>
     </div>
    </div>
 
