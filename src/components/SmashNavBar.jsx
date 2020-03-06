@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './PortalSmashers.css';
+import '../index.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import GoogleFontLoader from 'react-google-font-loader';
 import YouTube from 'react-youtube';
@@ -16,7 +17,7 @@ function SmashNavBar(props) {
   var navBarAddStyles = {
     Color: 'yellow',
     fontWeight: 'bold',
-    fontFamily: 'Barriecito',
+    fontFamily: 'Inhuman',
     zIndex: '1',
     maxWidth: '100',
     margin: '10% auto',
@@ -71,7 +72,7 @@ function SmashNavBar(props) {
 
   return (
     <div style={navBarAddStyles}>
-    <h1 style={titleStyle}> PORTAL SMASHERS</h1>
+    <h1 style={titleStyle}> PORTAL SMASHERS II: "The Re-Smashing"</h1>
     <Navbar collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
     <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -79,7 +80,7 @@ function SmashNavBar(props) {
 
     <Nav className="mr-auto">
       <NavDropdown title="THE EVENT" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"><Link to="/About">About Portal Smashers</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/Enter">About Portal Smashers</Link></NavDropdown.Item>
         <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Location</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>

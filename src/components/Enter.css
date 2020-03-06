@@ -1,0 +1,13 @@
+.trash {
+  background-image: url(./gifs/logoBack1.gif);
+
+  display: block;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-blend-mode:luminosity;
+  opacity: .9;
+
+
+  }

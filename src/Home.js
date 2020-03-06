@@ -13,6 +13,7 @@ import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Video from './components/Video.jsx';
 import Pictures from './components/Pictures.jsx';
+import Enter from './components/Enter.jsx';
 
 function Home() {
     var logoStyles= {
@@ -38,6 +39,7 @@ function Home() {
       <Route path='/Contact' component={Contact} />
       <Route path='/About' component={About} />
       <Route path='/Pictures' component={Pictures} />
+      <Route path='/Enter' component={Enter} />
       </Switch>
     </div>
 
