@@ -90,24 +90,26 @@ var niStyles={
 }
 
 var oneStyles ={
-  fontSize: '75px'
-}
-
-var twoStyles ={
-  fontSize: '20px',
+  fontSize: '75px',
   display: 'flex',
   justifyContent: 'center',
   itemAlign: 'center',
+  textAlign: 'center'
+}
+
+var twoStyles ={
+  fontSize: '30px',
+  display: 'flex',
+  justifyContent: 'center',
+  itemAlign: 'center',
+  paddingTop: '15%'
 }
 
    return(
      <div style={massStyles}>
      <Container  >
-  <Row >
-
+  <Row style={oneStyles}>
     <div style={oneStyles}> WELCOME TO THE PSYSCOUTS</div>
-
-
   </Row>
 
   <Row>

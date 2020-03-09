@@ -12,6 +12,15 @@ import mask1 from './gifs/mask1.gif'
    var shitStyles ={
      size: 'cover',
      zIndex: '2',
+     display: 'block',
+     marginLeft: 'auto',
+     marginRight: 'auto',
+     width: '100%',
+     padding: '.25%',
+     border:'15px solid black',
+     opacity: '.85',
+     blurRadius: '10px',
+    
 
 
    }
@@ -23,7 +32,7 @@ import mask1 from './gifs/mask1.gif'
      <div>
      <Link to="/Menu"><img style={shitStyles} src={mask1} alt="fucked"></img>
      </Link>
-     
+
 
      </div>
    );
