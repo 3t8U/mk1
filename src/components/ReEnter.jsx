@@ -31,7 +31,7 @@ var homeStyles = {
  imageAlign: 'center',
  color: 'yellow',
  padding: '10%',
- backgro10ndImage: "url(" + {logoBack1} + ")",
+ backgroundImage: "url(" + {logoBack1} + ")",
  zIndex: '2',
 
 
@@ -41,7 +41,7 @@ var massStyles={
   display: 'flex',
   justifyContent: 'center',
   itemAlign: 'center',
-  padding: '5%',
+  padding: '20%',
   textAlign: 'center',
   color: 'yellow',
   fontFamily: 'Inhuman',
@@ -89,27 +89,22 @@ var niStyles={
 
 }
 
-var oneStyles ={
-  fontSize: '75px',
-  display: 'flex',
-  justifyContent: 'center',
-  itemAlign: 'center',
-  textAlign: 'center'
-}
-
-var twoStyles ={
-  fontSize: '30px',
-  display: 'flex',
-  justifyContent: 'center',
-  itemAlign: 'center',
-  paddingTop: '15%'
-}
 
    return(
      <div style={massStyles}>
      <Container  >
-  <Row style={oneStyles}>
-    <div style={oneStyles}> WELCOME TO THE PSYSCOUTS</div>
+  <Row >
+    <Col style={onStyles} >
+    <div >
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>EVENTS</div>
+      </div>
+    </Col>
+    <Col >
+      <div> </div>
+    </Col>
+    <Col  style={thStyles}>
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>LINKS...</div>
+    </Col>
   </Row>
 
   <Row>
@@ -118,7 +113,7 @@ var twoStyles ={
     </Col>
     <Col lg={6} style={centerIsleStyles} className="trash" >
       <div>
-      <Link to="/Menu"><img src={logo} className="App-logo" alt="logo" /></Link>
+      <Link to="/Intro"><img src={logo} className="App-logo" alt="logo" /></Link>
 
       </div>
     </Col>
@@ -129,13 +124,13 @@ var twoStyles ={
 
   <Row>
     <Col style={seStyles}>
-
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>MAKE CONTACT</div>
     </Col>
     <Col >
-    <div style={twoStyles}> When in doubt.....Click on a swirling icon to whisk you back to safety..........</div>
       <div> </div>
     </Col>
     <Col style={niStyles}>
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>ABOUT</div>
     </Col>
   </Row>
 </Container>

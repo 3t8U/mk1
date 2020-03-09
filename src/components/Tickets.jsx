@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './images/logo.png';
 import { Link } from 'react-router-dom';
+import NavBar from './NavBar'
+import Logo from './Logo'
+import wlogo from './images/wlogo.png';
+import logo from './images/logo.png';
+import logoBack1 from './gifs/logoBack1.gif';
 import './Enter.css';
 import '../index.css';
-import { Navbar, Nav, NavDropdown, Container, Col, Row } from 'react-bootstrap';
-import wlogo from './images/wlogo.png';
-import logoBack1 from './gifs/logoBack1.gif';
 
- function Start() {
+import { Navbar, Nav, NavDropdown, Container, Col, Row } from 'react-bootstrap';
+
+ function Tickets() {
+
 var contStyles={
   display: 'block',
   marginLeft: 'auto',
@@ -31,7 +35,7 @@ var homeStyles = {
  imageAlign: 'center',
  color: 'yellow',
  padding: '10%',
- backgro10ndImage: "url(" + {logoBack1} + ")",
+ backgroundImage: "url(" + {logoBack1} + ")",
  zIndex: '2',
 
 
@@ -41,7 +45,7 @@ var massStyles={
   display: 'flex',
   justifyContent: 'center',
   itemAlign: 'center',
-  padding: '5%',
+  padding: '20%',
   textAlign: 'center',
   color: 'yellow',
   fontFamily: 'Inhuman',
@@ -63,6 +67,7 @@ var onStyles={
   paddingLeft: '2%',
   marginTop: '5%',
   width: '75%',
+
 
 
 }
@@ -90,26 +95,16 @@ var niStyles={
 }
 
 var oneStyles ={
-  fontSize: '75px',
-  display: 'flex',
-  justifyContent: 'center',
-  itemAlign: 'center',
-  textAlign: 'center'
+    fontSize: '100px'
 }
 
-var twoStyles ={
-  fontSize: '30px',
-  display: 'flex',
-  justifyContent: 'center',
-  itemAlign: 'center',
-  paddingTop: '15%'
-}
 
    return(
+
      <div style={massStyles}>
      <Container  >
-  <Row style={oneStyles}>
-    <div style={oneStyles}> WELCOME TO THE PSYSCOUTS</div>
+  <Row >
+      <div> <h1 style={oneStyles}> PRESALES COMING SOON! </h1></div>
   </Row>
 
   <Row>
@@ -118,7 +113,7 @@ var twoStyles ={
     </Col>
     <Col lg={6} style={centerIsleStyles} className="trash" >
       <div>
-      <Link to="/Menu"><img src={logo} className="App-logo" alt="logo" /></Link>
+      <Link to="/PortalSmashers"><img src={logo} className="App-logo" alt="logo" /></Link>
 
       </div>
     </Col>
@@ -132,24 +127,16 @@ var twoStyles ={
 
     </Col>
     <Col >
-    <div style={twoStyles}> When in doubt.....Click on a swirling icon to whisk you back to safety..........</div>
       <div> </div>
     </Col>
     <Col style={niStyles}>
+
     </Col>
   </Row>
 </Container>
  </div>
 
-
-
-
-
-
-
-
-
    );
  }
 
-export default Start;
+export default Tickets;

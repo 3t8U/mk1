@@ -16,7 +16,11 @@ import Pictures from './components/Pictures.jsx';
 import Enter from './components/Enter.jsx';
 import Artists from './components/Artists.jsx';
 import AboutPS from './components/AboutPS.jsx';
-
+import Tickets from './components/Tickets.jsx';
+import Location from './components/Location.jsx';
+import Msg from './components/Msg.jsx';
+import Trouble from './components/Trouble.jsx';
+import MoreTrouble from './components/MoreTrouble.jsx';
 
 function Home() {
     var logoStyles= {
@@ -33,10 +37,8 @@ function Home() {
   return (
     <div className="Home">
       <Switch>
-      <Route exact path='/' component={Intro} />
+      <Route exact path='/' component={Enter} />
       <Route exact path='/PortalSmashers' render={() => <PortalSmashers selected={"main"} />} />
-      <Route path='/PortalSmashers/About' render={() => <PortalSmashers selected={"about"} />} />
-      <Route path='/PortalSmashers/Pictures' render={() => <PortalSmashers selected={"Pictures"} />} />
       <Route path='/Menu' component={Menu} />
       <Route path='/Video' component={Video} />
       <Route path='/Contact' component={Contact} />
@@ -46,6 +48,12 @@ function Home() {
       <Route path='/Contact' component={Contact} />
       <Route path='/Artists' component={Artists} />
       <Route path='/AboutPS' component={AboutPS} />
+      <Route path='/Location' component={Location} />
+      <Route path='/Tickets' component={Tickets} />
+      <Route path='/Msg' component={Msg} />
+      <Route path='/Trouble' component={Trouble} />
+      <Route path='/MoreTrouble' component={MoreTrouble} />
+
       </Switch>
     </div>
 

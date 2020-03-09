@@ -20,7 +20,7 @@ function NavBar(props) {
     margin: '10% auto',
     position: 'relative',
     opacity: '.90',
-    padding: '10px',
+
     fontSize: '50px'
 
 
@@ -58,25 +58,33 @@ function NavBar(props) {
     display: 'block',
     marginLeft: 'auto',
     marginRight: 'auto',
+    paddingBottom: '10%',
     width: '50%',
     maxWidth: '150px',
     maxHeight: '20%',
     imageAlign: 'center',
     color: 'yellow'
 
+
   };
 
   return (
     <div fixed="top"style={navBarAddStyles}>
-    <h1 style={titleStyle}> PsyScouts Virtual Den</h1>
+    <h1 style={titleStyle}>
+    <Navbar.Brand href="#home"><Link to="/Menu"><img style={homeStyles} src={wlogo} className="App-mlogo"  alt="banner"></img>
+    </Link></Navbar.Brand>
+    PsyScouts Virtual Den
+    <Navbar.Brand href="#home"><Link to="/Trouble"><img style={homeStyles} src={wlogo} className="App-mlogo"  alt="banner">
+    </img></Link></Navbar.Brand></h1>
+
     <Navbar  collapseOnSelect  expand="lg" bg="black" variant="dark" color="yellow !important">
-    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} className="App-mlogo"  alt="banner"></img></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
     <Nav className="mr-auto">
-    
-       <Link to="/About"  className="link">ABOUT US</Link>
+    <NavDropdown title="ABOUT US" id="collasible-nav-dropdown">
+    <NavDropdown.Item href="#action/3.1"><Link to="/About"  className="link">ABOUT US</Link></NavDropdown.Item>
+    </NavDropdown>
     </Nav>
 
     <Nav className="mr-auto" color="yellow">
@@ -86,16 +94,16 @@ function NavBar(props) {
     </Nav>
 
     <Nav className="mr-auto">
+    <Nav.Link href="#home"><Link to="/Pictures" className="link">PICTURES</Link></Nav.Link>
+    </Nav>
+
+    <Nav className="mr-auto">
     <NavDropdown title="CONTACT" id="collasible-nav-dropdown">
     <NavDropdown.Item href="mailto:Cascadiapsyscouts@gmail.com"><img style={fbStyles} src={emicon} alt="banner"></img></NavDropdown.Item>
     <NavDropdown.Item href="https://www.facebook.com/cascadiapsyscouts/" target="_blank"><img style={fbStyles} src={fbicon} alt="banner"></img></NavDropdown.Item>
     <NavDropdown.Item href="https://www.patreon.com/portalsmashers" target="_blank"><img style={patStyles} src={paticon} alt="banner"></img></NavDropdown.Item>
     </NavDropdown>
     </Nav>
-
-
-
-
 
 
     <Nav className="mr-auto">
@@ -115,7 +123,6 @@ function NavBar(props) {
     </NavDropdown>
     </Nav>
 
-    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo}className="App-mlogo" alt="banner"></img></Link></Navbar.Brand>
     </Navbar.Collapse>
     </Navbar>
     </div>

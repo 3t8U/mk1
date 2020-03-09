@@ -31,7 +31,7 @@ function About() {
     fontWeight: 'bold',
     fontFamily: 'Inhuman',
     borderColor: 'yellow',
-    marginTop: '20px',
+    marginTop: '10px',
     fontSize: '45px',
     textAlign: 'center',
     textShadow: '3px 2px red',
