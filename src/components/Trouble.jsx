@@ -17,10 +17,8 @@ import mask1 from './gifs/mask1.gif'
      marginRight: 'auto',
      width: '100%',
      padding: '.25%',
-     border:'15px solid black',
-     opacity: '.85',
-     blurRadius: '10px',
     
+
 
 
    }
