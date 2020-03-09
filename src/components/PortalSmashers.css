@@ -1,5 +1,7 @@
 
-
+.link {
+  color: grey;
+}
 .overlord{
   background-image: url('./images/stage.jpg');
   background-color: red;

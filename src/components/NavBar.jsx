@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import './PortalSmashers.css';
 import GoogleFontLoader from 'react-google-font-loader';
 import { Link } from 'react-router-dom';
 import YouTube from 'react-youtube';
@@ -74,7 +75,7 @@ function NavBar(props) {
     <Navbar.Collapse id="responsive-navbar-nav">
 
     <Nav className="mr-auto">
-       <Link to="/About">ABOUT US</Link>
+       <Link to="/About"  className="link">ABOUT US</Link>
     </Nav>
 
     <Nav className="mr-auto" color="yellow">

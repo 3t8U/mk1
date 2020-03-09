@@ -1,8 +1,8 @@
 
 import React from 'react';
 import './PortalSmashers.css';
-import '../index.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import '../index.css';
 import GoogleFontLoader from 'react-google-font-loader';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
@@ -79,14 +79,14 @@ function SmashNavBar(props) {
     <Navbar.Collapse id="responsive-navbar-nav">
 
     <Nav className="mr-auto">
-      <NavDropdown title="THE EVENT" id="collasible-nav-dropdown">
+      <NavDropdown title="THE EVENT" id="collasible-nav-dropdown" >
         <NavDropdown.Item href="#action/3.1"><Link to="/AboutPS">About Portal Smashers</Link></NavDropdown.Item>
         <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Location</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 
     <Nav className="mr-auto">
-      <Nav.Link href="#home"><Link to="/Artists">ARTISTS</Link></Nav.Link>
+      <Nav.Link href="#home"><Link to="/Artists" className="link">ARTISTS</Link></Nav.Link>
     </Nav>
 
     <Nav className="mr-auto">
