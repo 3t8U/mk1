@@ -3,7 +3,8 @@ import Logo from './Logo.jsx';
 import NavBar from './NavBar.jsx'
 import { Link } from 'react-router-dom';
 import Menu from './Menu.jsx'
-import mask1 from './gifs/mask1.gif'
+import bgmask from './gifs/bgmask.gif'
+import matrixTrans1 from './gifs/matrixTrans1.gif'
 import './PortalSmashers.css';
 
  function MoreTrouble
@@ -24,12 +25,27 @@ import './PortalSmashers.css';
 
    }
 
+   var someStyles ={
+     size: 'cover',
+     zIndex: '3',
+     display: 'block',
+     marginLeft: 'auto',
+     marginRight: 'auto',
+     width: '100%',
+     padding: '.25%',
+     backgroundImage:"url(" + {matrixTrans1} + ")",
+
+
+
+
+   }
+
 
 
 
    return(
-     <div>
-     <Link to="/Menu"><img style={shitStyles} src={mask1} alt="fucked"></img>
+     <div style={someStyles}>
+     <Link to="/PortalSmashers"><img style={shitStyles} src={bgmask} alt="fucked"></img>
      </Link>
 
 

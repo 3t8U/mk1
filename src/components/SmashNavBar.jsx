@@ -72,9 +72,9 @@ function SmashNavBar(props) {
 
   return (
     <div style={navBarAddStyles}>
-    <h1 style={titleStyle}> PORTAL SMASHERS II: "The Re-Smashing"</h1>
+    <h1 style={titleStyle}><Navbar.Brand href="#home"><Link to="/Menu"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link></Navbar.Brand> PORTAL SMASHERS II: "The Re-Smashing"<Navbar.Brand href="#home"><Link to="/Menu"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link></Navbar.Brand></h1>
     <Navbar collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
-    <Navbar.Brand href="#home"><Link to="/Menu"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link></Navbar.Brand>
+
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
