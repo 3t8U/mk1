@@ -104,18 +104,10 @@ var twoStyles ={
      <div style={massStyles}>
      <Container  >
   <Row >
-    <Col style={onStyles} >
-    <div >
 
-      </div>
-    </Col>
-    <Row >
-      <div style={oneStyles}> WELCOME TO THE PSYSCOUTS</div>
-      <div style={twoStyles}> When in doubt.....Click on a swirling icon to whisk you back to safety..........</div>
-    </Row>
-    <Col  style={thStyles}>
+    <div style={oneStyles}> WELCOME TO THE PSYSCOUTS</div>
 
-    </Col>
+
   </Row>
 
   <Row>
@@ -138,10 +130,10 @@ var twoStyles ={
 
     </Col>
     <Col >
+    <div style={twoStyles}> When in doubt.....Click on a swirling icon to whisk you back to safety..........</div>
       <div> </div>
     </Col>
     <Col style={niStyles}>
-
     </Col>
   </Row>
 </Container>
