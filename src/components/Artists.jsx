@@ -84,7 +84,7 @@ return(
 
   <Container>
     <Row style={headStyles}>
-    <Link to="/"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
+    <Link to="/PortalSmashers"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
 
     <h1 style={hStyles}>ARTISTS</h1>
     </Row>

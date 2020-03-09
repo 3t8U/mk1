@@ -74,14 +74,14 @@ function SmashNavBar(props) {
     <div style={navBarAddStyles}>
     <h1 style={titleStyle}> PORTAL SMASHERS II: "The Re-Smashing"</h1>
     <Navbar collapseOnSelect color="yellow" expand="lg" bg="black" variant="dark">
-    <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link></Navbar.Brand>
+    <Navbar.Brand href="#home"><Link to="/Menu"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
     <Nav className="mr-auto">
       <NavDropdown title="THE EVENT" id="collasible-nav-dropdown" >
         <NavDropdown.Item href="#action/3.1"><Link to="/AboutPS">About Portal Smashers</Link></NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Location</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/Location">Location</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 
@@ -89,11 +89,13 @@ function SmashNavBar(props) {
       <Nav.Link href="#home"><Link to="/Artists" className="link">ARTISTS</Link></Nav.Link>
     </Nav>
 
+
     <Nav className="mr-auto">
-      <NavDropdown title="PICTURES" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"><Link to="/Pictures">Pictures</Link></NavDropdown.Item>
-      </NavDropdown>
+      <Nav.Link href="#home"><Link to="/Tickets" className="link">TICKETS</Link></Nav.Link>
     </Nav>
+
+
+
 
 
       <Nav className="mr-auto">
@@ -104,23 +106,7 @@ function SmashNavBar(props) {
         </NavDropdown>
       </Nav>
 
-      <Nav className="mr-auto">
-      <NavDropdown title="LINKS...." id="collasible-nav-dropdown">
-        <NavDropdown.Item href="http://starcampshasta.com/" target="_blank">Star Camp Shasta</NavDropdown.Item>
-        <NavDropdown.Item href="https://www.facebook.com/groups/2329159873863593/" target="_blank">Siskiyou Psytrance</NavDropdown.Item>
-        <NavDropdown.Item href="https://www.facebook.com/events/206778827143953/" target="_blank">Montana Magic Mountain Collective</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.1"><Link to="/Video">U.T.T.A. Chaos</Link></NavDropdown.Item>
-        <NavDropdown.Item href="https://www.absolutshitrecords.com/" target="_blank">Absolut Shit Records</NavDropdown.Item>
-        <NavDropdown.Item href="http://anomalisticrecords.com/" target="_blank">Anomalistic Records</NavDropdown.Item>
-        <NavDropdown.Item href="https://ektoplazm.com/" target="_blank">Ektoplazm</NavDropdown.Item>
-        <NavDropdown.Item href="https://www.fractaltribe.org/" target="_blank">Fractal Tribe</NavDropdown.Item>
-        <NavDropdown.Item href="https://www.cascadiapsychedelic.com/" target="_blank">Cascadia Psychedelic</NavDropdown.Item>
-        <NavDropdown.Item href="https://www.facebook.com/VJNels0nMandala/" target="_blank">VJ Nelson Mandala</NavDropdown.Item>
-        <NavDropdown.Item href="https://www.facebook.com/omgalaser/" target="_blank">OMG a Laser</NavDropdown.Item>
-      </NavDropdown>
-      </Nav>
 
-      <Navbar.Brand href="#home"><Link to="/"><img style={homeStyles} src={wlogo}className="App-mlogo"  alt="banner"></img></Link></Navbar.Brand>
     </Navbar.Collapse>
   </Navbar>
     </div>

@@ -89,16 +89,6 @@ var niStyles={
 
 }
 
-var oneStyles ={
-  fontSize: '75px'
-}
-
-var twoStyles ={
-  fontSize: '20px',
-  display: 'flex',
-  justifyContent: 'center',
-  itemAlign: 'center',
-}
 
    return(
      <div style={massStyles}>
@@ -106,15 +96,14 @@ var twoStyles ={
   <Row >
     <Col style={onStyles} >
     <div >
-
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>EVENTS</div>
       </div>
     </Col>
-    <Row >
-      <div style={oneStyles}> WELCOME TO THE PSYSCOUTS</div>
-      <div style={twoStyles}> When in doubt.....Click on a swirling icon to whisk you back to safety..........</div>
-    </Row>
+    <Col >
+      <div> </div>
+    </Col>
     <Col  style={thStyles}>
-
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>LINKS...</div>
     </Col>
   </Row>
 
@@ -124,7 +113,7 @@ var twoStyles ={
     </Col>
     <Col lg={6} style={centerIsleStyles} className="trash" >
       <div>
-      <Link to="/Menu"><img src={logo} className="App-logo" alt="logo" /></Link>
+      <Link to="/Intro"><img src={logo} className="App-logo" alt="logo" /></Link>
 
       </div>
     </Col>
@@ -135,13 +124,13 @@ var twoStyles ={
 
   <Row>
     <Col style={seStyles}>
-
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>MAKE CONTACT</div>
     </Col>
     <Col >
       <div> </div>
     </Col>
     <Col style={niStyles}>
-
+      <div> <img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img>ABOUT</div>
     </Col>
   </Row>
 </Container>
