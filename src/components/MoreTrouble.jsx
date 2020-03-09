@@ -12,7 +12,7 @@ import './PortalSmashers.css';
 
    var shitStyles ={
      size: 'cover',
-     zIndex: '2',
+     zIndex: '1',
      display: 'block',
      marginLeft: 'auto',
      marginRight: 'auto',
@@ -20,6 +20,7 @@ import './PortalSmashers.css';
      padding: '.25%',
      border: 'solid 10px blue',
      borderRadius: '5%',
+     position: 'relative'
 
 
 
@@ -27,14 +28,29 @@ import './PortalSmashers.css';
 
    var someStyles ={
      size: 'cover',
-     zIndex: '3',
+     zIndex: '2',
      display: 'block',
      marginLeft: 'auto',
      marginRight: 'auto',
      width: '100%',
      padding: '.25%',
      backgroundImage:"url(" + {matrixTrans1} + ")",
+     position: 'absolute',
 
+
+
+   }
+
+   var someMoreStyles ={
+     size: 'cover',
+     zIndex: '1',
+     display: 'block',
+     marginLeft: 'auto',
+     marginRight: 'auto',
+     width: '100%',
+     padding: '.25%',
+     backgroundImage:"url(" + {matrixTrans1} + ")",
+     position: 'relative',
 
 
 
@@ -43,12 +59,15 @@ import './PortalSmashers.css';
 
 
 
+
    return(
+
+     <div style={someMoreStyles}>
      <div style={someStyles}>
-     <Link to="/PortalSmashers"><img style={shitStyles} src={bgmask} alt="fucked"></img>
-     </Link>
+    <Link to="/PortalSmashers"><img style={shitStyles} src={bgmask} alt="fucked"></img>
+    </Link>
 
-
+      </div>
      </div>
    );
  }
