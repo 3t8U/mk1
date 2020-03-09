@@ -100,7 +100,7 @@ function SmashNavBar(props) {
         <NavDropdown title="CONTACT US" id="collasible-nav-dropdown">
           <NavDropdown.Item href="mailto:Cascadiapsyscouts@gmail.com"><img style={fbStyles} src={emicon} alt="banner"></img></NavDropdown.Item>
           <NavDropdown.Item href="https://www.facebook.com/cascadiapsyscouts/" target="_blank"><img style={fbStyles} src={fbicon} alt="banner"></img></NavDropdown.Item>
-          <NavDropdown.Item href="https://www.patreon.com/cascadiapsyscouts" target="_blank"><img style={patStyles} src={paticon} alt="banner"></img></NavDropdown.Item>
+          <NavDropdown.Item href="https://www.patreon.com/portalsmashers" target="_blank"><img style={patStyles} src={paticon} alt="banner"></img></NavDropdown.Item>
         </NavDropdown>
       </Nav>
 
