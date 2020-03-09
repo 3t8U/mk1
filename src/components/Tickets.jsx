@@ -7,6 +7,7 @@ import logo from './images/logo.png';
 import logoBack1 from './gifs/logoBack1.gif';
 import './Enter.css';
 import '../index.css';
+
 import { Navbar, Nav, NavDropdown, Container, Col, Row } from 'react-bootstrap';
 
  function Tickets() {
@@ -68,6 +69,7 @@ var onStyles={
   width: '75%',
 
 
+
 }
 var thStyles={
   paddingBottom: '5%',
@@ -93,7 +95,7 @@ var niStyles={
 }
 
 var oneStyles ={
-  fontSize: '50%'
+    fontSize: '100px'
 }
 
 
@@ -102,17 +104,7 @@ var oneStyles ={
      <div style={massStyles}>
      <Container  >
   <Row >
-    <Col style={onStyles} >
-    <div >
-
-      </div>
-    </Col>
-    <Col >
       <div> <h1 style={oneStyles}> PRESALES COMING SOON! </h1></div>
-    </Col>
-    <Col  style={thStyles}>
-
-    </Col>
   </Row>
 
   <Row>

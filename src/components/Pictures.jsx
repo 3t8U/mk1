@@ -20,7 +20,7 @@ function Pictures (props){
  var caroStyles={
    display: 'flex',
    flexDirection: 'column',
-   alignItems: 'center',
+   alignContent: 'center',
    justifyContent: 'center',
    marginTop: 'auto',
    marginBottom: 'auto',

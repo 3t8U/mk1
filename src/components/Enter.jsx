@@ -31,7 +31,7 @@ var homeStyles = {
  imageAlign: 'center',
  color: 'yellow',
  padding: '10%',
- backgroundImage: "url(" + {logoBack1} + ")",
+ backgro10ndImage: "url(" + {logoBack1} + ")",
  zIndex: '2',
 
 
@@ -41,7 +41,7 @@ var massStyles={
   display: 'flex',
   justifyContent: 'center',
   itemAlign: 'center',
-  padding: '20%',
+  padding: '5%',
   textAlign: 'center',
   color: 'yellow',
   fontFamily: 'Inhuman',

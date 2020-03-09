@@ -1,5 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import './PortalSmashers.css';
 import NavBar from './NavBar'
 class Video extends React.Component {
   render() {

@@ -6,7 +6,7 @@ import Menu from './Menu.jsx'
 import mask1 from './gifs/mask1.gif'
 import './PortalSmashers.css';
 
- function Trouble
+ function MoreTrouble
  () {
 
    var shitStyles ={
@@ -37,5 +37,5 @@ import './PortalSmashers.css';
    );
  }
 
-export default Trouble
+export default MoreTrouble
 ;
