@@ -10,7 +10,7 @@ function PortalSmashers(props) {
     display: 'block',
     marginLeft: 'auto',
     marginRight: 'auto',
-    width: '50%',
+    width: '40%',
     padding: '.25%',
     border:'15px solid black',
     opacity: '.85',

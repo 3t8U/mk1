@@ -80,15 +80,13 @@ function SmashNavBar(props) {
 
     <Nav className="mr-auto">
       <NavDropdown title="THE EVENT" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"><Link to="/Enter">About Portal Smashers</Link></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1"><Link to="/AboutPS">About Portal Smashers</Link></NavDropdown.Item>
         <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Location</Link></NavDropdown.Item>
       </NavDropdown>
     </Nav>
 
     <Nav className="mr-auto">
-      <NavDropdown title="ARTISTS" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="https://www.mixcloud.com/Space_Toilet_Radio/pantiestheclown-live-hindsight-2020/" target="_blank">pantiestheclown</NavDropdown.Item>
-      </NavDropdown>
+      <Nav.Link href="#home"><Link to="/Artists">ARTISTS</Link></Nav.Link>
     </Nav>
 
     <Nav className="mr-auto">

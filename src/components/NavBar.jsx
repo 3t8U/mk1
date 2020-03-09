@@ -12,7 +12,7 @@ import wlogo from './images/wlogo.png';
 function NavBar(props) {
   var navBarAddStyles = {
     Color: 'yellow !important',
-    
+
     fontFamily: 'Inhuman',
     zIndex: '1',
     maxWidth: '100',
@@ -74,13 +74,10 @@ function NavBar(props) {
     <Navbar.Collapse id="responsive-navbar-nav">
 
     <Nav className="mr-auto">
-    <NavDropdown title="ABOUT" id="collasible-nav-dropdown">
-    <NavDropdown.Item href="#action/3.1" color="yellow !important"><Link to="/About">About Us</Link></NavDropdown.Item>
-    <NavDropdown.Item href="#action/3.1"><Link to="/Crew">Crew</Link></NavDropdown.Item>
-    </NavDropdown>
+       <Link to="/About">ABOUT US</Link>
     </Nav>
 
-    <Nav className="mr-auto">
+    <Nav className="mr-auto" color="yellow">
     <NavDropdown title="EVENTS" id="collasible-nav-dropdown">
     <NavDropdown.Item href="#action/3.1"><Link to="/PortalSmashers">Portal Smashers</Link></NavDropdown.Item>
     </NavDropdown>

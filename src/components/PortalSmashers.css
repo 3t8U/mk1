@@ -37,8 +37,8 @@ h3 , p {
 
 
 .flip-scale-up-hor {
--webkit-animation: flip-scale-up-hor 10s linear infinite both;
-        animation: flip-scale-up-hor 10s linear infinite both;
+-webkit-animation: flip-scale-up-hor 10s linear  both;
+        animation: flip-scale-up-hor 10s linear  both;
 }
 
 /* ----------------------------------------------
@@ -63,8 +63,8 @@ h3 , p {
           transform: scale(2.5) rotateX(-90deg);
 }
 100% {
-  -webkit-transform: scale(1) rotateX(-180deg);
-          transform: scale(1) rotateX(-180deg);
+  -webkit-transform: scale(1) rotateX(-360deg);
+          transform: scale(1) rotateX(-360deg);
 }
 }
 @keyframes flip-scale-up-hor {
@@ -77,7 +77,7 @@ h3 , p {
           transform: scale(2.5) rotateX(-90deg);
 }
 100% {
-  -webkit-transform: scale(1) rotateX(-180deg);
-          transform: scale(1) rotateX(-180deg);
+  -webkit-transform: scale(1) rotateX(-360deg);
+          transform: scale(1) rotateX(-360deg);
 }
 }

@@ -10,14 +10,13 @@ function About() {
   var aboutStyles ={
     color: 'yellow',
     fontWeight: 'bold',
-    fontFamily: 'Barriecito',
+    fontFamily: 'Inhuman',
     border: '10px solid yellow',
     borderRadius: '50%',
     borderColor: 'yellow',
     padding: '12%',
     margin: '10vh',
     fontSize: '30px',
-
     textShadow: '3px 2px red',
 
 
@@ -30,7 +29,7 @@ function About() {
   var tagStyles ={
     color: 'yellow',
     fontWeight: 'bold',
-    fontFamily: 'Barriecito',
+    fontFamily: 'Inhuman',
     borderColor: 'yellow',
     marginTop: '20px',
     fontSize: '45px',
