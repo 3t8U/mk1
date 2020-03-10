@@ -4,6 +4,8 @@ import NavBar from './NavBar'
 import Logo from './Logo'
 import './AboutPS.css';
 import forest from './gifs/forest.gif';
+import logo from './images/logo.png';
+
  function Location() {
 
    var aboutStyles ={
@@ -17,6 +19,10 @@ import forest from './gifs/forest.gif';
      margin: '10vh',
      fontSize: '30px',
      textShadow: '3px 2px red',
+     display: 'flex',
+     justifyContent: 'center',
+     itemAlign: 'center',
+
 
    }
 
@@ -31,6 +37,16 @@ import forest from './gifs/forest.gif';
 
    }
 
+   var moreStyles ={
+     color: 'yellow',
+
+     fontFamily: 'Inhuman',
+     paddingTop: '10%',
+     display: 'block',
+     marginLeft: 'auto',
+     marginRight: 'auto',
+
+   }
 
 
    return(
@@ -40,6 +56,10 @@ import forest from './gifs/forest.gif';
      <div style={logoStyles}>
       The portal will open on a magical plot of private forest located in the Pacific North Western state of Oregon, USA......
      </div>
+     <div style={moreStyles}>
+     <Link to="/PortalSmashers"><img src={logo} className="App-logo" alt="logo" /></Link>
+     </div>
+
      </div>
 
 
