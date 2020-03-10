@@ -22,6 +22,7 @@ import { Row  } from 'react-bootstrap';
      display: 'flex',
      justifyContent: 'center',
      itemAlign: 'center',
+     objectAlign: 'center',
 
 
    }
@@ -33,18 +34,19 @@ import { Row  } from 'react-bootstrap';
      display: 'flex',
      justifyContent: 'center',
      itemAlign: 'center',
+     textAlign: 'center',
      textShadow: '3px 2px red',
 
    }
 
    var moreStyles ={
      color: 'yellow',
-
      fontFamily: 'Inhuman',
-     paddingTop: '10%',
      display: 'block',
      marginLeft: 'auto',
      marginRight: 'auto',
+     marginTop: 'auto',
+     marginBottom: 'auto',
 
    }
 
@@ -54,7 +56,7 @@ import { Row  } from 'react-bootstrap';
     marginRight: 'auto',
     marginTop: 'auto',
     marginBottom: 'auto',
-    width: '25%',
+    width: '10%',
     textAlign: 'center',
     imageAlign: 'center',
     color: 'yellow',
@@ -68,23 +70,17 @@ import { Row  } from 'react-bootstrap';
    return(
 
 
-
-
-
-       <Link to="/PortalSmashers"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
-  
-
-
-     <div style={aboutStyles} className="more">
+  <div >
+    <div style={moreStyles}>
+      <Link to="/PortalSmashers"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
+    </div>
+   <div style={aboutStyles} className="more">
      <div style={logoStyles}>
       The portal will open on a magical plot of private forest located in the Pacific North Western state of Oregon, USA......
      </div>
-     <div style={moreStyles}>
-     </div>
 
-     </div>
-
-
+   </div>
+</div>
 
 
    );
