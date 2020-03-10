@@ -1,19 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import stage from './images/stage.jpg'
 import './AboutPS.css';
 import './PortalSmashers.css';
 import wlogo from './images/wlogo.png';
 import logoBack1 from './gifs/logoBack1.gif';
-import SmashNavBar from './SmashNavBar.jsx';
-import MoreTrouble from './MoreTrouble.jsx'
-
-
-
-
-
-
-
 
 
 function AboutPS () {

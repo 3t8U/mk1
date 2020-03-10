@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar.jsx';
-import { Switch, Route } from 'react-router-dom';
-import Logo from './Logo.jsx';
-import logo from './images/logo.png';
 import wlogo from './images/wlogo.png';
 import logoBack1 from './gifs/logoBack1.gif';
 import './Enter.css';

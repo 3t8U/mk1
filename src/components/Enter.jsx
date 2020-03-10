@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import './Enter.css';
 import '../index.css';
 import { Container, Col, Row } from 'react-bootstrap';
-import wlogo from './images/wlogo.png';
-import logoBack1 from './gifs/logoBack1.gif';
+
 
  function Start() {
 

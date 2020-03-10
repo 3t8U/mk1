@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from './NavBar'
+import SmashNavBar from './SmashNavBar'
 import Logo from './Logo'
 import './AboutPS.css';
-import forest from './gifs/forest.gif';
+import wlogo from './images/wlogo.png';
 import logo from './images/logo.png';
-
+import { Row  } from 'react-bootstrap';
  function Location() {
 
    var aboutStyles ={
@@ -48,8 +48,31 @@ import logo from './images/logo.png';
 
    }
 
+   var homeStyles = {
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: 'auto',
+    marginBottom: 'auto',
+    width: '25%',
+    textAlign: 'center',
+    imageAlign: 'center',
+    color: 'yellow',
+
+    zIndex: '1',
+    fontFamily: 'Inhuman',
+
+   };
+
 
    return(
+
+
+
+
+
+       <Link to="/PortalSmashers"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
+  
 
 
      <div style={aboutStyles} className="more">
@@ -57,7 +80,6 @@ import logo from './images/logo.png';
       The portal will open on a magical plot of private forest located in the Pacific North Western state of Oregon, USA......
      </div>
      <div style={moreStyles}>
-     <Link to="/PortalSmashers"><img src={logo} className="App-logo" alt="logo" /></Link>
      </div>
 
      </div>
