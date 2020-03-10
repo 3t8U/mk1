@@ -8,6 +8,7 @@
   /* animation:spin 20s linear infinite; */
 }
 
+
  {
   background-image: url(./images/stage.jpg),
   url('./gifs/tileBG.gif' );
@@ -22,6 +23,16 @@ to{transform:rotate(360deg)}
 .navi {
   position: absolute;
   z-index: 1;
+}
+
+.more{
+  background-image:
+  url(./gifs/forest.gif);
+  opacity: .9;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* animation:spin 20s linear infinite; */
 }
 
 /* backgroundImage: `url(${stage})`,
