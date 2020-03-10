@@ -20,6 +20,7 @@ import Tickets from './components/Tickets.jsx';
 import Location from './components/Location.jsx';
 import Trouble from './components/Trouble.jsx';
 import MoreTrouble from './components/MoreTrouble.jsx';
+import MessageBoard from './components/MessageBoard.jsx';
 
 function Home() {
     var logoStyles= {
@@ -51,7 +52,7 @@ function Home() {
       <Route path='/Tickets' component={Tickets} />
       <Route path='/Trouble' component={Trouble} />
       <Route path='/MoreTrouble' component={MoreTrouble} />
-
+      <Route path='/MessageBoard' component={MessageBoard} />
       </Switch>
     </div>
 

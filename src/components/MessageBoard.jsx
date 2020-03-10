@@ -1,9 +1,9 @@
-
+import React from 'react';
 import date from "date-and-time/date-and-time";
 import axios from "axios";
 import * as firebase from "firebase";
-import MessagesDisplay from "./messages/MessagesDisplay";
-import PostMessage from "./messages/PostMessage";
+import MessagesDisplay from "./MessagesDisplay.jsx";
+import PostMessage from "./PostMessage.jsx";
 
 //Config Firebase
 var config = {
@@ -52,9 +52,9 @@ const fakeMessages = [
 
 function App() {
   //Initialize States
-  var [messages, setMessages] = useState([]);
+  var [messages, setMessages] = React.useState([]);
   var [messagesLoaded, setMessagesLoaded] = React.useState(false);
-  var [msgItems, setMsgItems] = useState({
+  var [msgItems, setMsgItems] = React.useState({
     messeageTxt: "",
     messeageDepartment: ""
   });
