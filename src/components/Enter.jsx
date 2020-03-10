@@ -3,39 +3,12 @@ import logo from './images/logo.png';
 import { Link } from 'react-router-dom';
 import './Enter.css';
 import '../index.css';
-import { Navbar, Nav, NavDropdown, Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 import wlogo from './images/wlogo.png';
 import logoBack1 from './gifs/logoBack1.gif';
 
  function Start() {
-var contStyles={
-  display: 'block',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  width: '100%',
-  maxWidth: '150px',
-  maxHeight: '20%',
-  imageAlign: 'center',
-  color: 'yellow'
-}
 
-var homeStyles = {
- display: 'block',
- marginLeft: 'auto',
- marginRight: 'auto',
- marginTop: 'auto',
- marginBottom: 'auto',
- width: '75%',
- maxWidth: '150px',
- maxHeight: '20%',
- imageAlign: 'center',
- color: 'yellow',
- padding: '10%',
- backgro10ndImage: "url(" + {logoBack1} + ")",
- zIndex: '2',
-
-
-};
 
 var massStyles={
   display: 'flex',
@@ -53,26 +26,12 @@ var centerIsleStyles ={
   justifyContent: 'center',
   itemAlign: 'center',
   paddingTop: '1%',
-  
+
   zIndex: '1',
 
 }
 
-var onStyles={
-  paddingBottom: '5%',
-  paddingLeft: '2%',
-  marginTop: '5%',
-  width: '75%',
 
-
-}
-var thStyles={
-  paddingBottom: '5%',
-  paddingRight: '2%',
-  marginTop: '5%',
-  width: '75%',
-
-}
 
 var seStyles={
   paddingTop: '5%',

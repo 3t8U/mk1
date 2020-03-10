@@ -1,13 +1,10 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './PortalSmashers.css';
-import GoogleFontLoader from 'react-google-font-loader';
 import { Link } from 'react-router-dom';
-import YouTube from 'react-youtube';
 import fbicon from './icons/fbicon.png';
 import paticon from './icons/paticon.png';
 import emicon from './icons/emicon.png';
-import logo from './images/logo.png';
 import wlogo from './images/wlogo.png';
 
 function NavBar(props) {

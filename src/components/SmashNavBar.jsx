@@ -3,15 +3,12 @@ import React from 'react';
 import './PortalSmashers.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import '../index.css';
-import GoogleFontLoader from 'react-google-font-loader';
-import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
 import fbicon from './icons/fbicon.png';
 import paticon from './icons/paticon.png';
 import emicon from './icons/emicon.png';
-import logo from './images/logo.png';
 import wlogo from './images/wlogo.png';
-import Pictures from './Pictures.jsx';
+
 
 function SmashNavBar(props) {
   var navBarAddStyles = {
@@ -31,7 +28,7 @@ function SmashNavBar(props) {
    var titleStyle = {
      textAlign: 'center',
      color: 'yellow',
-     fontSize: '75px'
+     fontSize: '60px'
    };
 
    var fbStyles = {
