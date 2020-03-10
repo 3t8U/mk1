@@ -14,18 +14,21 @@ function Menu() {
     display: 'flex',
     justifyContent: 'center',
     itemAlign: 'center',
-    paddingTop: '%',
     image: "url(" + {logoBack1} + ")",
     zIndex: '2',
     minWidth: '50%',
-    minHeight: 'auto'
+    minHeight: 'auto',
+    marginBottom: '100%',
+    filter: 'invert(100%)',
 
   }
+
+
   return (
     <div >
-      <NavBar/>
+    <NavBar/>
       <div style={centerIsleStyles}>
-      <Link to="/Menu"><img src={wlogo} className="App-logo" alt="logo" /></Link>
+      <Link to="/Enter"><img src={wlogo}  alt="logo" /></Link>
       </div>
       </div>
 

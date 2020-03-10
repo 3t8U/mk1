@@ -53,7 +53,7 @@ var centerIsleStyles ={
   justifyContent: 'center',
   itemAlign: 'center',
   paddingTop: '1%',
-  image: "url(" + {logoBack1} + ")",
+  
   zIndex: '1',
 
 }
