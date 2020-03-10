@@ -28,10 +28,9 @@ function Message(props){
     <div>
     <div style={content}>
     {console.log(props)}
-    <h3>{props.location} - {props.user}</h3>
+    <h3>{props.user}</h3>
     <hr style={hrStyle}/>
-      <h4>{props.formattedWaitTime}</h4>
-    <p><em>{props.issue}</em></p>
+    <p><em>{props.content}</em></p>
     <Link to="/EditMessage">Update Message</Link>
 
     </div>
@@ -41,7 +40,7 @@ function Message(props){
 Message.propTypes = {
   user: PropTypes.string,
   location: PropTypes.string,
-  issue: PropTypes.string,
+  content: PropTypes.string,
   formattedWaitTime: PropTypes.string.isRequired,
 };
 export default Message;
