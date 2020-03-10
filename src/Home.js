@@ -18,7 +18,6 @@ import Artists from './components/Artists.jsx';
 import AboutPS from './components/AboutPS.jsx';
 import Tickets from './components/Tickets.jsx';
 import Location from './components/Location.jsx';
-import Msg from './components/Msg.jsx';
 import Trouble from './components/Trouble.jsx';
 import MoreTrouble from './components/MoreTrouble.jsx';
 
@@ -50,7 +49,6 @@ function Home() {
       <Route path='/AboutPS' component={AboutPS} />
       <Route path='/Location' component={Location} />
       <Route path='/Tickets' component={Tickets} />
-      <Route path='/Msg' component={Msg} />
       <Route path='/Trouble' component={Trouble} />
       <Route path='/MoreTrouble' component={MoreTrouble} />
 
