@@ -1,5 +1,5 @@
 import React from "react";
-
+import logoBack1 from './gifs/logoBack1.gif'
 export default function PostMessage({
   departmentList,
   msgItems,
@@ -35,25 +35,35 @@ export default function PostMessage({
     <div
       className="postMsgC"
       style={{
-        background: "#ccc",
+        backgroundImage: "url(" + {logoBack1} + ")",
         width: "30%",
         float: "left",
         padding: "20px",
         border: 'solid 10px yellow',
         borderRadius: '5%',
         fontFamily: 'Inhuman',
-        color: 'yellow'
+        color: 'yellow',
+        zIndex: '2',
+        textAlign: 'center',
       }}
     >
       <form onSubmit={postFormUpdate}>
         <h2>Post A Message</h2>
 
         <textarea
+          name="username"
+          value={msgItems.messeageName}
+          onChange={updateFormEdits}
+          placeholder="User Name"
+          style={{ width: "90%", height: "20px",  backgroundImage: "url(" + {logoBack1} + ")", }}
+        />
+        <br />
+        <textarea
           name="messeageTxt"
           value={msgItems.messeageTxt}
           onChange={updateFormEdits}
           placeholder="Enter message"
-          style={{ width: "98%", height: "80px" }}
+          style={{ width: "98%", height: "80px",  backgroundImage: "url(" + {logoBack1} + ")", }}
         />
         <br />
 
@@ -62,7 +72,7 @@ export default function PostMessage({
           value={msgItems.messeageDepartment}
           onChange={updateFormEdits}
           id="deparment"
-          style={{ width: "100%", height: "30px" }}
+          style={{ width: "100%", height: "30px", backgroundImage: "url(" + {logoBack1} + ")",}}
         >
           <option>- Select Topic-</option>
           {departmentOptions()}
@@ -73,7 +83,7 @@ export default function PostMessage({
         <input
           type="submit"
           value="Post Message"
-          style={{ width: "100px", height: "30px" }}
+          style={{ width: "100px", height: "30px", backgroundImage: "url(" + {logoBack1} + ")", backgroundColor: 'blue', borderRadius:'10%' }}
         />
       </form>
     </div>

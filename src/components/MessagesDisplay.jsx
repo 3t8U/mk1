@@ -17,7 +17,7 @@ export default function MessagesDisplay({ messages, messagesLoaded }) {
     <div
       className="msgsC"
       style={{
-        background: "#ccc",
+        textAlign: 'center',
         width: "55%",
         float: "right",
         padding: "20px",border: 'solid 10px yellow',
@@ -26,7 +26,7 @@ export default function MessagesDisplay({ messages, messagesLoaded }) {
          color: 'yellow'
       }}
     >
-      <h2>Messages</h2>
+      <h2 style={{fontSize: '10vh'}}>Messages</h2>
 
       {getMessages()}
     </div>
