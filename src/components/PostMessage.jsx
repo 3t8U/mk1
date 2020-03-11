@@ -38,7 +38,11 @@ export default function PostMessage({
         background: "#ccc",
         width: "30%",
         float: "left",
-        padding: "20px"
+        padding: "20px",
+        border: 'solid 10px yellow',
+        borderRadius: '5%',
+        fontFamily: 'Inhuman',
+        color: 'yellow' 
       }}
     >
       <form onSubmit={postFormUpdate}>

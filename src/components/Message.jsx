@@ -7,7 +7,7 @@ export default function Message({ msgItem }) {
  //<div>{msgItem.msg}</div>
 
  return (
-   <div className="message" style={{ paddingBottom: "20px" }}>
+   <div className="message" style={{ paddingBottom: "20px", fontFamily: 'Inhuman', color: 'yellow'  }}>
      <b>{msgItem.time}</b>
      <br />
      {msgItem.msg}

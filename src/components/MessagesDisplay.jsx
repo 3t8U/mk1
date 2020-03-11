@@ -11,6 +11,7 @@ export default function MessagesDisplay({ messages, messagesLoaded }) {
       return <div>Loading...</div>;
     }
   }
+  
 
   return (
     <div
@@ -19,7 +20,10 @@ export default function MessagesDisplay({ messages, messagesLoaded }) {
         background: "#ccc",
         width: "55%",
         float: "right",
-        padding: "20px"
+        padding: "20px",border: 'solid 10px yellow',
+         borderRadius: '5%',
+         fontFamily: 'Inhuman',
+         color: 'yellow'
       }}
     >
       <h2>Messages</h2>

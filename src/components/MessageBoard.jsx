@@ -151,7 +151,8 @@ function App() {
 
 
   return (
-    <div className="msgBoardC" style={{ width: "80%", margin: "40px auto" }}>
+    <div className="msgBoardC" style={{ width: "80%", margin: "40px auto", fontFamily: 'Inhuman', color: 'yellow' }}>
+
       <h1>Message Board</h1>(Disabled - needs API key)
       <PostMessage
         departmentList={departmentList}
