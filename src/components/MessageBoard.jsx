@@ -180,7 +180,7 @@ function App() {
 
   return (
     <div className="msgBoardC" style={{ width: "80%", margin: "40px auto", fontFamily: 'Inhuman', color: 'yellow' }}>
-    <Link to="/PortalSmashers"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
+    <Link to="/Menu"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
 
     <h1 style={hStyles}>MESSAGE BOARD</h1>
       <PostMessage
