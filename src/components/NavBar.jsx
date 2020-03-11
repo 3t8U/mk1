@@ -95,6 +95,11 @@ function NavBar(props) {
     </Nav>
 
     <Nav className="mr-auto">
+    <Nav.Link href="#home"><Link to="/MessageBoard" className="link">MESSAGE BOARD</Link></Nav.Link>
+    </Nav>
+
+
+    <Nav className="mr-auto">
     <NavDropdown title="CONTACT" id="collasible-nav-dropdown">
     <NavDropdown.Item href="mailto:Cascadiapsyscouts@gmail.com"><img style={fbStyles} src={emicon} alt="banner"></img></NavDropdown.Item>
     <NavDropdown.Item href="https://www.facebook.com/cascadiapsyscouts/" target="_blank"><img style={fbStyles} src={fbicon} alt="banner"></img></NavDropdown.Item>
