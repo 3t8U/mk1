@@ -9,7 +9,7 @@ import logoBack1 from './gifs/logoBack1.gif';
 import galaxy1 from './images/galaxy1.jpg';
 import questicon from './images/questicon.png';
 import { ReactComponent as Icon} from './icons/Icon.svg';
-
+import BoneMech from "./BoneMech.jsx";
 
 
 
@@ -91,7 +91,7 @@ return(
     <Row>
      <Col sm={6} md={4}>
        <Card style={cardStyles}>
-         <Card.Img variant="top" src={questicon} />
+         <Link to='/BoneMech'><Card.Img variant="top" src={questicon} /></Link>
 
          <Card.Body>
            <Card.Title style={nameStyles}>Unknown Artist</Card.Title>

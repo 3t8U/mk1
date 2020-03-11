@@ -15,10 +15,12 @@ import './PortalSmashers.css';
      display: 'block',
      marginLeft: 'auto',
      marginRight: 'auto',
-     width: '100%',
+     width: '75%',
      padding: '.25%',
      border: 'solid 10px blue',
      borderRadius: '5%',
+     opacity: '.8',
+
 
 
 
@@ -29,7 +31,7 @@ import './PortalSmashers.css';
 
    return(
      <div>
-     <Link to="/Menu"><img style={shitStyles} src={boneMech} alt="fucked"></img>
+     <Link to="/Artists"><img style={shitStyles} src={boneMech} alt="fucked"></img>
      </Link>
 
 
