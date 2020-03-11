@@ -2,7 +2,8 @@ import React from 'react';
 import date from "date-and-time/date-and-time";
 import axios from "axios";
 import * as firebase from "firebase";
-
+import MessagesDisplay from "./MessagesDisplay.jsx";
+import PostMessage from "./PostMessage.jsx";
 
 //Config Firebase
 var config = {
