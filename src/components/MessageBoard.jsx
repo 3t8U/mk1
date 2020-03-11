@@ -4,7 +4,9 @@ import axios from "axios";
 import * as firebase from "firebase";
 import MessagesDisplay from "./MessagesDisplay.jsx";
 import PostMessage from "./PostMessage.jsx";
-
+import wlogo from './images/wlogo.png';
+import logoBack1 from './gifs/logoBack1.gif';
+import { Link } from 'react-router-dom';
 //Config Firebase
 var config = {
   //apiKey: "",
@@ -149,11 +151,38 @@ function App() {
 
   }
 
+  var homeStyles = {
+   display: 'block',
+   marginLeft: 'auto',
+   marginRight: 'auto',
+   marginTop: 'auto',
+   marginBottom: 'auto',
+   width: '25%',
+   textAlign: 'center',
+   imageAlign: 'center',
+   color: 'yellow',
+   backgroundImage: "url(" + {logoBack1} + ")",
+   zIndex: '1',
+   fontFamily: 'Inhuman',
+
+  };
+
+  var hStyles={
+    zIndex: '1',
+    textAlign: 'center',
+    margin: '10%',
+    fontFamily: 'Inhuman',
+    color: 'yellow',
+    fontSize: '10vw',
+    objectAlign: 'center'
+  }
+
 
   return (
     <div className="msgBoardC" style={{ width: "80%", margin: "40px auto", fontFamily: 'Inhuman', color: 'yellow' }}>
+    <Link to="/PortalSmashers"><img style={homeStyles} src={wlogo} className="App-mlogo" alt="banner"></img></Link>
 
-      <h1>Message Board</h1>(Disabled - needs API key)
+    <h1 style={hStyles}>MESSAGE BOARD</h1>
       <PostMessage
         departmentList={departmentList}
         msgItems={msgItems}

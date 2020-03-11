@@ -42,7 +42,7 @@ export default function PostMessage({
         border: 'solid 10px yellow',
         borderRadius: '5%',
         fontFamily: 'Inhuman',
-        color: 'yellow' 
+        color: 'yellow'
       }}
     >
       <form onSubmit={postFormUpdate}>
@@ -64,7 +64,7 @@ export default function PostMessage({
           id="deparment"
           style={{ width: "100%", height: "30px" }}
         >
-          <option>- Select -</option>
+          <option>- Select Topic-</option>
           {departmentOptions()}
         </select>
         <br />
