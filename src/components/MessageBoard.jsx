@@ -132,7 +132,22 @@ function App() {
       */
   }
 
-  
+  var imgStyles={
+    maxWidth: '80%',
+    minWidth: 'auto',
+    height: 'auto',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 'auto',
+    marginBottom: 'auto',
+    position: 'relative',
+    imageSize: 'cover',
+    border: 'solid 10px yellow',
+    borderRadius: '5%'
+
+  }
 
 
   return (
