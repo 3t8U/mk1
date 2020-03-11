@@ -13,19 +13,30 @@ function Menu() {
     itemAlign: 'center',
     image: "url(" + {logoBack1} + ")",
     zIndex: '2',
-    minWidth: '50%',
+    minWidth: '100%',
     minHeight: 'auto',
     marginBottom: '100%',
     filter: 'invert(100%)',
 
   }
 
+  var minStyles ={
+  
+    imageSize: '25%',
+
+
+    marginBottom: '100%',
+
+
+  }
+
+
 
   return (
     <div >
     <NavBar/>
       <div style={centerIsleStyles}>
-      <Link to="/Enter"><img src={wlogo}  alt="logo" /></Link>
+      <Link to="/Enter"><img src={wlogo} style={minStyles} alt="logo" /></Link>
       </div>
       </div>
 
