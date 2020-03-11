@@ -76,8 +76,7 @@ import { Row  } from 'react-bootstrap';
     </div>
    <div style={aboutStyles} className="more">
      <div style={logoStyles}>
-      The portal will open on a magical plot of private forest located in the Pacific North Western state of Oregon, USA......
-     </div>
+      
 
    </div>
 </div>
