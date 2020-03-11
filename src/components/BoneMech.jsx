@@ -3,10 +3,10 @@ import Logo from './Logo.jsx';
 import NavBar from './NavBar.jsx'
 import { Link } from 'react-router-dom';
 import Menu from './Menu.jsx'
-import mask1 from './gifs/mask1.gif'
+import boneMech from './images/boneMech.jpg'
 import './PortalSmashers.css';
 
- function Trouble
+ function BoneMech
  () {
 
    var shitStyles ={
@@ -29,7 +29,7 @@ import './PortalSmashers.css';
 
    return(
      <div>
-     <Link to="/Menu"><img style={shitStyles} src={mask1} alt="fucked"></img>
+     <Link to="/Menu"><img style={shitStyles} src={boneMech} alt="fucked"></img>
      </Link>
 
 
@@ -37,5 +37,4 @@ import './PortalSmashers.css';
    );
  }
 
-export default Trouble
-;
+export default BoneMech ;
