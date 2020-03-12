@@ -12,7 +12,7 @@ export default function MessagesDisplay({ messages, messagesLoaded }) {
     }
   }
 
-https://www.oregonlive.com/coronavirus/2020/03/no-gatherings-of-250-or-more-people-in-oregon-for-4-weeks-gov-kate-brown-says.html
+
 
   return (
     <div
