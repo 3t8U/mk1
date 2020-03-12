@@ -8,15 +8,16 @@ import wlogo from './images/wlogo.png';
 import logoBack1 from './gifs/logoBack1.gif';
 import { Link } from 'react-router-dom';
 //Config Firebase
-var config = {
-  //apiKey: "",
-  authDomain: "crud-api-8bb56.firebaseapp.com",
-  databaseURL: "https://crud-api-8bb56.firebaseio.com",
-  projectId: "crud-api-8bb56",
-  storageBucket: "crud-api-8bb56.appspot.com",
-  messagingSenderId: "391815000566",
-  appId: "1:391815000566:web:30db75c544c10eddb8d7d7"
-};
+var firebaseConfig = {
+    apiKey: "AIzaSyBeQkktgNcQIsYnux7vK2iDWU8_B8WG1cM",
+    authDomain: "psyscouts.firebaseapp.com",
+    databaseURL: "https://psyscouts.firebaseio.com",
+    projectId: "psyscouts",
+    storageBucket: "psyscouts.appspot.com",
+    messagingSenderId: "242463044674",
+    appId: "1:242463044674:web:c71ac74560193474a2a9db",
+    measurementId: "G-H566Q4BKRC"
+  };
 if (!firebase.apps.length) {
   firebase.initializeApp(config);
 }
