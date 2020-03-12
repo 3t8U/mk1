@@ -38,7 +38,13 @@ var homeStyles = {
  marginRight: 'auto',
  marginTop: 'auto',
  marginBottom: 'auto',
- 
+ width: '25%',
+ textAlign: 'center',
+ imageAlign: 'center',
+ color: 'yellow',
+ backgroundImage: "url(" + {logoBack1} + ")",
+ zIndex: '1',
+ fontFamily: 'Inhuman',
 
 };
 
