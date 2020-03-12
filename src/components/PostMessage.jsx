@@ -7,10 +7,9 @@ export default function PostMessage({
   handleFormPost
 }) {
   function departmentOptions() {
-    //Convert Object into an array of keys to map over
+
     var departmentKeys = Object.keys(departmentList);
 
-    //Map through array and build out the key and value pairs
     return departmentKeys.map(function(key, i) {
       return (
         <option value={key} key={i}>
