@@ -23,9 +23,11 @@
     "react-dom": "^16.13.0",
     "react-gif-player": "^0.4.2",
     "react-google-font-loader": "^1.1.0",
+    "react-redux-firebase": "^3.1.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "3.4.0",
     "react-youtube": "^7.9.0",
+    "redux-firestore": "^0.12.0",
     "webfontloader": "^1.6.28"
   },
   "scripts": {

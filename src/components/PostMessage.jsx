@@ -51,7 +51,7 @@ export default function PostMessage({
         <h2>Post A Message</h2>
 
         <textarea
-          name="username"
+          name="messageUser"
           value={msgItems.messeageName}
           onChange={updateFormEdits}
           placeholder="User Name"

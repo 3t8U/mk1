@@ -9,24 +9,24 @@ import logoBack1 from './gifs/logoBack1.gif';
 import { Link } from 'react-router-dom';
 //Config Firebase
 var firebaseConfig = {
-    apiKey: "AIzaSyBeQkktgNcQIsYnux7vK2iDWU8_B8WG1cM",
-    authDomain: "psyscouts.firebaseapp.com",
-    databaseURL: "https://psyscouts.firebaseio.com",
-    projectId: "psyscouts",
-    storageBucket: "psyscouts.appspot.com",
-    messagingSenderId: "242463044674",
-    appId: "1:242463044674:web:c71ac74560193474a2a9db",
-    measurementId: "G-H566Q4BKRC"
-  };
-if (!firebase.apps.length) {
-  firebase.initializeApp(config);
+    apiKey: "AIzaSyAEP2M_xTD-LjsFsX5ayv5oJ8BfkBoAlJU",
+    authDomain: "scoutden-a76ed.firebaseapp.com",
+    databaseURL: "https://scoutden-a76ed.firebaseio.com",
+    projectId: "scoutden-a76ed",
+    storageBucket: "scoutden-a76ed.appspot.com",
+    messagingSenderId: "840790968733",
+    appId: "1:840790968733:web:f36090b72ef5feab99c774",
+    measurementId: "G-SX5JKV533R"
+  };if (!firebase.apps.length) {
+  firebase.initializeApp();
 }
 
-//API URL
+// API URL
 // Using Firebase instead
-var apiConfig = {
-  apiUrl: "http://xampp.d3v/status_api"
-};
+// var apiConfig = {
+//   apiUrl: "http://xampp.d3v/status_api"
+// };
+
 
 //List of Departments
 const departmentList = {
@@ -59,22 +59,12 @@ function App() {
   var [messagesLoaded, setMessagesLoaded] = React.useState(false);
   var [msgItems, setMsgItems] = React.useState({
     messeageTxt: "",
-    messeageDepartment: ""
+    messeageDepartment: "",
+    messageUser: "",
   });
 
   //Using an empty array sets it to trigger just on load
   React.useEffect(function() {
-    //Load current messages from API
-    /*Disable axios for firebase
-    axios.get(apiConfig.apiUrl + "/get.php?delay=5").then(function(response) {
-      //Insert Data
-      setMessages(response.data);
-
-
-      //Change loading status
-      setMessagesLoaded(true);
-    });
-    */
 
     var ref = firebase.database().ref("messagesApp");
     ref.on("value", function(snapshot) {
@@ -106,6 +96,7 @@ function App() {
     let newMsg = {
       msg: msgItems.messeageTxt,
       type: msgItems.messeageDepartment,
+      user: msgItems.messageUser,
       time: formatDate
     };
 
