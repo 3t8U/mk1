@@ -21,13 +21,11 @@ if (!firebase.apps.length) {
   firebase.initializeApp(config);
 }
 
-//API URL
-// Using Firebase instead
 var apiConfig = {
   apiUrl: "http://xampp.d3v/status_api"
 };
 
-//List of Departments
+
 const departmentList = {
   general: "General",
   events: "Events",
@@ -36,21 +34,7 @@ const departmentList = {
   what: "What!?!?",
 };
 
-//Fake Messages for intial testing
-/*
-const fakeMessages = [
-  {
-    id: 1,
-    msg: "test message 1",
-    time: "2019-04-11, 09:15"
-  },
-  {
-    id: 2,
-    msg: "test message 2",
-    time: "2019-04-14, 17:12"
-  }
-]
-*/
+
 
 function App() {
   //Initialize States
@@ -61,77 +45,46 @@ function App() {
     messeageDepartment: ""
   });
 
-  //Using an empty array sets it to trigger just on load
+
   React.useEffect(function() {
-    //Load current messages from API
-    /*Disable axios for firebase
-    axios.get(apiConfig.apiUrl + "/get.php?delay=5").then(function(response) {
-      //Insert Data
-      setMessages(response.data);
-
-
-      //Change loading status
-      setMessagesLoaded(true);
-    });
-    */
 
     var ref = firebase.database().ref("messagesApp");
     ref.on("value", function(snapshot) {
       var tempArr = [];
       snapshot.forEach(function(child) {
-        //console.log(child.val());
         tempArr.push(child.val());
       });
       console.log(tempArr);
       setMessages(tempArr);
 
-      //Change loading status
+
       setMessagesLoaded(true);
     });
   }, []);
 
-  //Dynamically Update States for the form
+
   function handleFormEdits(event) {
     const { name, value } = event.target;
     setMsgItems(prevState => ({ ...prevState, [name]: value }));
   }
 
-  //Submit a new post
+
   function handleFormPost() {
-    //Use data and time imported package to format date
+
     let formatDate = date.format(new Date(), "YYYY-MM-DD, HH:mm");
 
-    //Create an object to match the API
+
     let newMsg = {
       msg: msgItems.messeageTxt,
       type: msgItems.messeageDepartment,
       time: formatDate
     };
 
-    //Insert into firebase
+
     var ref = firebase.database().ref("messagesApp");
     ref.push(newMsg);
 
-    //Use axios package to post to the PHP API
-    /*Disable axios for firebase
-    axios
-      .post(apiConfig.apiUrl + "/post.php", newMsg)
-      .then(function(response) {
-        if (response.data.success) {
-          //Database was updated so just add the new entry into the state
-          let updatedMessages = messages.slice(0); //make a copy of the message
-          updatedMessages.push(newMsg); //add the new message
-          setMessages(updatedMessages);
 
-          //Reset State to clear form
-          setMsgItems(prevState => ({ ...prevState, messeageTxt: "" }));
-          setMsgItems(prevState => ({ ...prevState, messeageDepartment: "" }));
-        }
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-      */
   }
 
   var imgStyles={
