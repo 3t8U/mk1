@@ -95,7 +95,10 @@ var niStyles={
 }
 
 var oneStyles ={
-    fontSize: '100px'
+    fontSize: '90px',
+    textAlign: 'center',
+    display: 'block'
+
 }
 
 
@@ -104,7 +107,7 @@ var oneStyles ={
      <div style={massStyles}>
      <Container  >
   <Row >
-      <div> <h1 style={oneStyles}> PRESALES COMING SOON! </h1></div>
+      <div> <h1 style={oneStyles}>PRESALES COMING SOON! </h1></div>
   </Row>
 
   <Row>
